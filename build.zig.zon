@@ -1,0 +1,31 @@
+.{
+    .fingerprint = 0xbe4b4e2ca9014040,
+    .name = .eazy_zig_tree_sitter,
+    .version = "0.0.0",
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .tree_sitter = .{
+            .url = "git+https://github.com/tree-sitter/zig-tree-sitter.git#b562510b5563dcf3b7fcac4a5fe9d60834c84667",
+            .hash = "tree_sitter-0.26.0-8heIf-vDAQDh0HhAAUVwVZFmLrwSKMZl5gRaVFqtas0W",
+        },
+        .tree_sitter_c = .{
+            .url = "git+https://github.com/tree-sitter/tree-sitter-c.git#b780e47fc780ddc8da13afa35a3f4ed5c157823d",
+            .hash = "tree_sitter_c-0.24.2-y5boS-ptQADHoCoVfjGT_nFtFQ5LbomIkW0fxG3_cmdB",
+        },
+        .tree_sitter_markdown = .{
+            .url = "git+https://github.com/tree-sitter-grammars/tree-sitter-markdown#c3570720f7f7bbad22fe96603f106276618e0cf5",
+            .hash = "N-V-__8AAPRhUwBMQ9zJ3yDPS8lwmNWjH6kmYlD6Bku8s6G0",
+        },
+        .tree_sitter_lua = .{
+            .url = "git+https://github.com/tree-sitter-grammars/tree-sitter-lua#10fe0054734eec83049514ea2e718b2a56acd0c9",
+            .hash = "N-V-__8AAE5ZCQA-BW5BOioWVkGcPTjhC5x1Qv07BH3Xt3dR",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+        "README.md",
+    },
+}
