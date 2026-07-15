@@ -20,6 +20,1186 @@
             .url = "git+https://github.com/tree-sitter-grammars/tree-sitter-lua#10fe0054734eec83049514ea2e718b2a56acd0c9",
             .hash = "N-V-__8AAE5ZCQA-BW5BOioWVkGcPTjhC5x1Qv07BH3Xt3dR",
         },
+        .tree_sitter_query = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-query/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACGcAwDom4aYIltGzFDYZqiAvQy5fkAHL36cgvaU",
+        },
+        .tree_sitter_commonlisp = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-commonlisp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFeyXgCMPV_syYXabOKB7zHZo6QI3YvQZKNiZnY6",
+        },
+        .tree_sitter_hcl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hcl/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAMpBUADBC9-NqnN3d_CelBB1j9TnTFy9NJ8te-3H",
+        },
+        .tree_sitter_cuda = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cuda/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAG9xQQEZ_jjhIPMUbpodxL5m1EWpD8XbOfPo-H8W",
+        },
+        .tree_sitter_glsl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-glsl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALyhWgDEbbfbZk-ZA6saDhFle0vzlrazPEZYV9sQ",
+        },
+        .tree_sitter_diff = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-diff/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAAULEwDDBPj9cGOTHPT1iE6oZabnwo70bstgVEf_",
+        },
+        .tree_sitter_hlsl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hlsl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAH-eSAEnZNskQedD48KdReetmiHtL_UWMff6G1Ui",
+        },
+        .tree_sitter_ungrammar = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ungrammar/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAGZUAQAKvuDTVgjT0yA9DV89Is1P5CaF3m51SS6C",
+        },
+        .tree_sitter_thrift = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-thrift/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAIIgDgCBAS3vnuAd9tZqM3gwc2VqqWbZdPtcjg-L",
+        },
+        .tree_sitter_meson = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-meson/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACAMFgDfI7_biYX7ytCzdupCWCQ9mcqGX3l4_xdV",
+        },
+        .tree_sitter_gitattributes = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANBEAwCwl7_Jht-oYIYyJ60LDOoJd8SmqyQ6ugVu",
+        },
+        .tree_sitter_pymanifest = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pymanifest/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFeOAgCV4QbN6lEGE6JNL8d17zjuIHdP3rOo1ypU",
+        },
+        .tree_sitter_poe_filter = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-poe-filter/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKjKBwDarQIHEo0ZyTqnlZUyXeikDRW-b12d3sOM",
+        },
+        .tree_sitter_tcl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-tcl/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAEfaCQAyRRBIaoKFNh1TExhSoICTHbf27Ezb4GCi",
+        },
+        .tree_sitter_chatito = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-chatito/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFrUBACFXTyf2V-CU7HKUQwhZvlViL_iFt_OnfVX",
+        },
+        .tree_sitter_arduino = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-arduino/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOEjGgEuK2Pzt1NUYexmcom8SNa0M9ISg71V_uVg",
+        },
+        .tree_sitter_wgsl_bevy = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-wgsl-bevy/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALweCwC3dDC401S48UBvLYE4-vF6sh1nJW0o5kdt",
+        },
+        
+        .tree_sitter_capnp = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-capnp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAC8FCgBdg3MhLTXp_VKpO2dTSs-kbLM5bqaCEWSs",
+        },
+        .tree_sitter_kdl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-kdl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJX-BwDCgzqWrUZwcPgfVSdBLxdyTuBab-aOABlj",
+        },
+        .tree_sitter_func = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-func/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEVGCwAO4BcMi0sM46JVIyRrNZuPh3mrwRZIaOWE",
+        },
+        .tree_sitter_move = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-move/archive/refs/heads/saving.tar.gz",
+            .hash = "N-V-__8AAMHDCAAAtS5m6VsZhV39PP4XWd3iaORGpYnbqFet",
+        },
+        .tree_sitter_go_sum = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-go-sum/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGsvBACLJp4wgg1AJH--mqBvFCaD1D5hdPgcelQS",
+        },
+        .tree_sitter_ron = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ron/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIXMAgBvKl_dqg2PcN0g_JoqgS3_D1C0satDkIWG",
+        },
+        .tree_sitter_po = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-po/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAIK0AQDASx-DmIFOTY3k22zkDIZGdhVV35rJrgPf",
+        },
+        .tree_sitter_starlark = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-starlark/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALNxLABsGdUJyQ_Wfim7og36NxX7paHouAeq5YgC",
+        },
+        .tree_sitter_yuck = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-yuck/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAHJOBAAbAP8RVp2tz2UCbHje7qfTNGu04Il07n05",
+        },
+        .tree_sitter_smali = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-smali/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANvvGwBo-nb_Z-L0Com52FiAwo7jEWi2w5u9_ywz",
+        },
+        .tree_sitter_bicep = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-bicep/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKv3FADLd2SQk5vMUtIvzPqbcMIuYEkES0-VNa--",
+        },
+        .tree_sitter_cpon = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cpon/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAARHAgACvwzH-gDwbVqiQ-kI8fC5Ijc_StvajTfN",
+        },
+        .tree_sitter_firrtl = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-firrtl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHs9FAC1zeOHlQ0h77rrfP9E3mH1c9Y8agzwvDm9",
+        },
+        .tree_sitter_luap = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luap/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIbiAQCdNsFiSud2Xf3SLKkOtisAQEMKEy9_HRvs",
+        },
+        .tree_sitter_squirrel = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-squirrel/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHPNMgCWB9sNlNCZHPLiCd6Tix3s7IFi03nxB5wB",
+        },
+        .tree_sitter_uxntal = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-uxntal/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALklBwDeH-FtxnIK0tKmQQux6LI0CJHmyniQCp15",
+        },
+        .tree_sitter_cairo = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cairo/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMp_JwDmWBA_LEEmcKebHO04pP7NhP0Q3WBJ1AB6",
+        },
+        .tree_sitter_odin = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-odin/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAO176ACxtMMQ_9Q2figGWNO7rutiJFIpLrsYyWQf",
+        },
+        .tree_sitter_hare = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hare/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPHcEAC3akmdJD4svhfWYl-8AQxLJwxBtToXR8L3",
+        },
+        .tree_sitter_pony = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pony/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFbmSwChUdacq11JNsknWwCbyqbr7GH6fEHmStWR",
+        },
+        .tree_sitter_tablegen = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-tablegen/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJuPCQAFeKgh2eb3natIYs_0mClnBn7Sxcn-zazn",
+        },
+        .tree_sitter_luadoc = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luadoc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAL8UCwB4z2b3GEngL0gRK6XEZ5calJiehSYeDaUM",
+        },
+        .tree_sitter_kotlin = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-kotlin/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFIvXAGyv7ipNSxY9RluNsK0GGyaMAg6ftjq-7sM",
+        },
+        .tree_sitter_vim = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-vim/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALIhVgBEy5yPKHSTIx57M4tIMXb9TzS0rLR-0eQD",
+        },
+        .tree_sitter_puppet = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-puppet/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMyEDQCDY0jW6ZibpsncT92F-7yPZapc02hY2IcY",
+        },
+        .tree_sitter_luau = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-luau/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMhoDgBwmrI8y85Ds4WX2q42n3ZBVkLWKD-oVBqA",
+        },
+        .tree_sitter_objc = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-objc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPXbuwFG88VJzsmUg_idlQL9-IF-dSLQPQatZGto",
+        },
+        .tree_sitter_ispc = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ispc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAM4nggBHDdOml77ABotkRJ7T9l-a1JiAmhjQXU9o",
+        },
+        .tree_sitter_pem = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-pem/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGB1AQDBMT-6e_-A_lW91aDB_1ffyveVQ6eOiTC2",
+        },
+        .tree_sitter_requirements = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-requirements/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIzpBAAAyivChU9EDhpga44qoAMMdwKnJkfcRTdq",
+        },
+        .tree_sitter_xml = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-xml/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJagCgC8YcaBL1imS74OFxpifTuFJ4TRH1YnElUV",
+        },
+        .tree_sitter_gpg_config = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gpg-config/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOiHDwCAWpMb8RPretolL6gG9CKYuI2oVQ8RdN0z",
+        },
+        .tree_sitter_bitbake = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-bitbake/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANe-QQDZ9Hom8jdBh6aODfKtQMNr1APIk3lvPNbx",
+        },
+        .tree_sitter_csv = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-csv/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAC16AwCkhKkrWvJQogmdr8-fOj9W-hPVd5m0ueil",
+        },
+        .tree_sitter_hyprlang = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-hyprlang/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAE7TAwAfdahw5fpG35gahdFrUbvrL5z-3aPIxi1c",
+        },
+        .tree_sitter_printf = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-printf/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAKtoAQBtI2zkatftOQdSJVjq7FliVeT0gNyOA9F8",
+        },
+        .tree_sitter_gstlaunch = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gstlaunch/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAE3ZAgDpG5Zld84o3BXBTSoZKtWRorgzVQXEP0u9",
+        },
+        .tree_sitter_re2c = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-re2c/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMPqCABc9SrJCGXjnDSdxdUrxRZXdZxEffMIbR-n",
+        },
+        .tree_sitter_doxygen = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-doxygen/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIJ9BQBrz5NMHbdsOd6_refzN7bPblIYbfBj3fW1",
+        },
+        .tree_sitter_zsh = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-zsh/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAD50mQCQKVgB45h3yqE1HB0bV6--DDW-RzsF8J5J",
+        },
+        .tree_sitter_ssh_config = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-ssh-config/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOL2EwCEFShEgyrjnydF5J2kAlsT7hGnYw12dvff",
+        },
+        .tree_sitter_nqc = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-nqc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEnHRwBxWoflk8M-MMyU2RvRBu4p5ydtA3HnSaqO",
+        },
+        .tree_sitter_kconfig = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-kconfig/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAA8fCACP7Ioq1RA9mM_PBBmKITC_QqHN57wskm4a",
+        },
+        .tree_sitter_gn = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-gn/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEfPAwBkRHCfi1FL1SK9VyDF-j8kOdpamuXd1N81",
+        },
+        .tree_sitter_udev = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-udev/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMe2BAA5UByJ8amuefWT7uSv5AMAz9lCG96QdfpW",
+        },
+        .tree_sitter_xcompose = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-xcompose/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABvWAQDPtCDZtNgyTvYgI6GHWWIgUXwltC4Vbvpb",
+        },
+        .tree_sitter_slang = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-slang/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANtrpwEfVgO_E38ckGn8NpCGZeybWQP3J8EdfMgr",
+        },
+        .tree_sitter_linkerscript = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-linkerscript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIdiCQBxvL5Q51mlGz-T5df5DeL7QuqbzhdxZzTb",
+        },
+        .tree_sitter_properties = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-properties/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABpNAgDts8FcFa5f_rxa9WrD0ZFGCYY7Xg8eDIed",
+        },
+        .tree_sitter_readline = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-readline/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABSxBwDAOkHlrgrNrOk-YvEhM6Bk20Fm_P4OPLZw",
+        },
+        .tree_sitter_make = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-make/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAMVsEgC0rug9JAAca82MW3tyFJrFdRA3ou6VEipn",
+        },
+        .tree_sitter_yaml = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-yaml/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEkcHQB61IN4Zp5o83gmDa69AUnJUBSFIVM9lGg-",
+        },
+        .tree_sitter_toml = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-toml/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKI7BABbJ5LWswYbVPhQVdmSYR9zKxmZ7ob_RSNI",
+        },
+        .tree_sitter_vue = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-vue/archive/refs/heads/main.tar.gz",
+            .hash = "N-V-__8AAFwFBABlynAuAchSv1v6hK9WcwFll62pDdCI7OxS",
+        },
+        .tree_sitter_qmldir = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-qmldir/archive/refs/heads/master.tar.gz",
+            .hash = "tree_sitter_qmldir-0.1.0-6S9bWz0sAQCl6h9WRB_NVZ3ClwEmc7l_7GruBa4wpazh",
+        },
+        .fork_zig = .{
+            .url = "git+https://github.com/gyoder/tree-sitter-zig#zig-0.16.0-update",
+            .hash = "tree_sitter_zig-1.1.2-JXVA8aR7XADBjv4VZbjbMe7mOmxqhPZwv9nZOSjvGRQv",
+        },
+
+
+
+        .tree_sitter_svelte = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-svelte/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABYgBwCGTDMVY_nARLxmx4ssF9ii3XBJX-PJjp56",
+        },
+        .tree_sitter_test = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-test/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMAsAgBdZHv-ztfRFnRJojTPQ3_HiABU2ds3jUHU",
+        },
+        .tree_sitter_scss = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-scss/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAN6nEgBtg36JPojMket0bfwc04lENplVR2k0zO22",
+        },
+        .tree_sitter_cst = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cst/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABYWAgCDSef9NabiYJVzIUtZSlsV1zodHwwtCOIO",
+        },
+        .tree_sitter_julia = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-julia/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALwbdQEvTKYLoBp4yidyqUeme90yu_f76H0px2uy",
+        },
+        .tree_sitter_haskell = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-haskell/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABRfQwHLEdmpQbZvewJf2Sv9wHMNpiemZplM5hxH",
+        },
+        .tree_sitter_cyberchef = .{
+            .url = "https://github.com/tree-sitter-grammars/tree-sitter-cyberchef/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAALsAQAfYC7vRJFQpnCqoph6KZBPxbucxevdtPle",
+        },
+        .tree_sitter_javascript = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-javascript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANlfOQDpOAP-6YMQeJ2nQetX1OpUshQr903bnIHU",
+        },
+        .tree_sitter_json = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-json/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHNaAgD6kjK3HX6lAf89chPqS5zIm0tLpvBQLOtX",
+        },
+        .tree_sitter_cpp = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-cpp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMePmwGeojPhBaBC10aGwaQIOU4vg1H17IWakWs-",
+        },
+        .tree_sitter_ruby = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-ruby/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAB_S8QDTw_FIWZfx_eKtcAvrPJuTP12QEMVN2LDS",
+        },
+        .tree_sitter_go = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-go/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAM9cIgDttbrvbwLWFB0JPplu_2KtCWu7__79EjIT",
+        },
+        .tree_sitter_c_sharp = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-c-sharp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALpc-AHb3HdtvBSOKNDXiFn8oDT8AXtsm5nk3twv",
+        },
+        .tree_sitter_python = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-python/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOiqPgC9tH5tYSAYNsMWLoPiSxcmkHvIhMnezomx",
+        },
+        .tree_sitter_typescript = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-typescript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJZtIQHTLStHg_0TegWiaX-N1przeeHzJp9x9b6z",
+        },
+        .tree_sitter_rust = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-rust/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHJYbgAipcanYj2A6rnj9wtGzjGzANkrOsqiFAxm",
+        },
+        .tree_sitter_bash = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-bash/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANjenwCy_cXlIbU8nqBzGxMlEHVokLZJYrmIXtoz",
+        },
+        .tree_sitter_php = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-php/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABgQ6QCTufRtmuKAuAvX1ty8ZouX1jZ17wGFcx6I",
+        },
+        .tree_sitter_java = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-java/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGrhLgBgxGFnDv-tHxMarGDRT4VTig1IIX1rcBdc",
+        },
+        .tree_sitter_scala = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-scala/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJlN0gFxPUfpXqmIgQLEXkmXsrvo3caVWINVJdTb",
+        },
+        .tree_sitter_ocaml = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-ocaml/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGaGxwK7r2vy00a8b4MDEm0eudoNzkzu1WM01h7Q",
+        },
+        .tree_sitter_agda = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-agda/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAP7k_AB2jRW86BSWy6UAO7CBOZQa7zEQ5jgHAj81",
+        },
+        .tree_sitter_fluent = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-fluent/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAONnAQDXWbfLuM19tqZy76Tv3xSQd_ZBSn450G3-",
+        },
+        .tree_sitter_html = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-html/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEmOAwDdgRRlet5t1CEdpX1YMCbfhFiIbj_vsBH9",
+        },
+        .tree_sitter_embedded_template = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-embedded-template/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAB52AgDoz8I9GbTi1fPWJWm489aS4SNYFz7LP0z4",
+        },
+        .tree_sitter_regex = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-regex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMsOBQB796H3noBI3YTf1a93FBJZgFY3cUqyo57N",
+        },
+        .tree_sitter_css = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-css/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKwvEACP3YMpMDoRyyZPOdDN1n-zdTZRWTc3uufz",
+        },
+        .tree_sitter_verilog = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-verilog/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALH12AIHKRKIHorvJNEJcBqbzvMqiez_BY4zLm-T",
+        },
+        .tree_sitter_jsdoc = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-jsdoc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABRdBAANMFnfpeJkGNp8mRhleFiFu5WQZIkqs8ck",
+        },
+        .tree_sitter_ql = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-ql/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHFjKQC_zEKCKO3S_weDKpUAI6g46gAVaSOBa81b",
+        },
+        .tree_sitter_tsq = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-tsq/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAI1yAQASc_4nxR6MGIVECL0huLOr5dM3bSeAkIx-",
+        },
+        .tree_sitter_ql_dbscheme = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-ql-dbscheme/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALdNAgDuudJd20AidQSiEWgPLD7uVgbEZcdek_rk",
+        },
+        .tp_ada = .{
+            .url = "https://github.com/briot/tree-sitter-ada/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHNJMgAgTa051RgoAs48ohsOgCTsM34tTxoj80CE",
+        },
+        .tp_angular = .{
+            .url = "https://github.com/dlvandenberg/tree-sitter-angular/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFaREABupicwPGfRrCwG0CfQyO0yf8OIdDivGI5Q",
+        },
+        .tp_apex = .{
+            .url = "https://github.com/aheber/tree-sitter-sfapex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEenxQCAfb1Y3W5o1LC8wKM1ibrjEcU0EQsWquW8",
+        },
+        .tp_asm = .{
+            .url = "https://github.com/RubixDev/tree-sitter-asm/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKCJAwAZWntp4NxgGM276QdZuQpKaS4tOd1vgrLL",
+        },
+        .tp_astro = .{
+            .url = "https://github.com/virchau13/tree-sitter-astro/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJNXBABREQeOPSNuanG8SHorPxYfcVDUmc1wdjR4",
+        },
+        .tp_authzed = .{
+            .url = "https://github.com/mleonidas/tree-sitter-authzed/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJAoDgCW11xp7bvn5vs2XUPgtfgqwB50SkkpZQnb",
+        },
+        .tp_awk = .{
+            .url = "https://github.com/Beaglefoot/tree-sitter-awk/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMMhWAAK1ulAymQq_a-aTMmla9VvoWiSA4jhnTwJ",
+        },
+        .tp_bass = .{
+            .url = "https://github.com/vito/tree-sitter-bass/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADRrAgCtRPQJa44fB8MAF5bor1Wx_4b4bj0VLUCX",
+        },
+        .tp_beancount = .{
+            .url = "https://github.com/polarmutex/tree-sitter-beancount/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALOdDgCkYcokCGah3UF51PG6IX1QY_KqnJHufcGM",
+        },
+        .tp_bibtex = .{
+            .url = "https://github.com/latex-lsp/tree-sitter-bibtex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHEqAwADCNhbsLs5ElTGiBTE2TIrgibsQVBD3ZDT",
+        },
+        .tp_blade = .{
+            .url = "https://github.com/EmranMR/tree-sitter-blade/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAArEHAFqX09yPK0dmPJ0pQqRnPOjcidv-fWeOSUD",
+        },
+        .tp_bp = .{
+            .url = "https://github.com/ambroisie/tree-sitter-bp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANIiBACXSie_lyCFP8F7V6EcO_5jfk7DPn6s9epA",
+        },
+        .tp_brightscript = .{
+            .url = "https://github.com/ajdelcimmuto/tree-sitter-brightscript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABGeJgDtdqqo-upSiiBx2tzMa1x70nSvx8unhxU6",
+        },
+        .tp_caddy = .{
+            .url = "https://github.com/opa-oz/tree-sitter-caddy/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHKjBgBOhv5ScfHU-6jQn2PgXNijXFU7I1RcHuZJ",
+        },
+        .tp_circom = .{
+            .url = "https://github.com/Decurity/tree-sitter-circom/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAL5VCQBA47rnzAV31B2-GCuCAnhcJ5lpYQS6nz5h",
+        },
+        .tp_clojure = .{
+            .url = "https://github.com/sogaiu/tree-sitter-clojure/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAAnoDwDKLr63cSQ_IHEojhLIanmbGIkrZNQSUM5_",
+        },
+        .tp_cmake = .{
+            .url = "https://github.com/uyha/tree-sitter-cmake/archive/refs/heads/master.tar.gz",
+            .hash = "tree_sitter_cmake-0.7.4-paqo3-1zCQBB2sa_lmQ0P0lhZEh4iOoXnFoCLu-l5VgQ",
+        },
+        .tp_comment = .{
+            .url = "https://github.com/stsewd/tree-sitter-comment/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOIACAAhvUKeFMdWOOyh8hLGQVxZ2oS7Hu5GwLMZ",
+        },
+        .tp_cooklang = .{
+            .url = "https://github.com/addcninblue/tree-sitter-cooklang/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACo8AwBUfQAD9QiPVqTulxtJBYGrH3lx5ryidPP0",
+        },
+        .tp_corn = .{
+            .url = "https://github.com/jakestanger/tree-sitter-corn/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOjdAQA8dNszNnsAEG53aR2U1v49uOtXOtWpnzKa",
+        },
+        .tp_cue = .{
+            .url = "https://github.com/eonpatapon/tree-sitter-cue/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMtiIQBHSrTqEaBRbQ1cc4Zi3ryfc4Cce4HVP6Tg",
+        },
+        .tp_cylc = .{
+            .url = "https://github.com/elliotfontaine/tree-sitter-cylc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADeACABL8Asv4CbbHZ8cco9H_klk_GLCgPfe2Jb_",
+        },
+        .tp_d = .{
+            .url = "https://github.com/gdamore/tree-sitter-d/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADTkbAFZQsIC25mE5ABzP-YQJtszgbghMi4aupWN",
+        },
+        .tp_dart = .{
+            .url = "https://github.com/UserNobody14/tree-sitter-dart/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAG_4jgCuX_rG9879dJz7I2ESQ_QRr5zBKoQV1hW2",
+        },
+        .tp_desktop = .{
+            .url = "https://github.com/ValdezFOmar/tree-sitter-desktop/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPcDAgDewdQRZewIDg24mSCzS2OQaD9aaqY5mMPA",
+        },
+        .tp_dhall = .{
+            .url = "https://github.com/jbellerb/tree-sitter-dhall/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKlAJgBt2CZ08DRQUB9GUonTyQua5X6BLPUr6D7A",
+        },
+        .tp_disassembly = .{
+            .url = "https://github.com/ColinKennedy/tree-sitter-disassembly/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFSmAgDkyx9I4zpRsJ23F6JoImFeBtEd3rqG0uss",
+        },
+        .tp_djot = .{
+            .url = "https://github.com/treeman/tree-sitter-djot/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEDeOwA_FDrDbwbUC6Y-XFY2VGFWm-RaCYtP3UGx",
+        },
+        .tp_dockerfile = .{
+            .url = "https://github.com/camdencheek/tree-sitter-dockerfile/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPbFBgA_FDZHBliS5m2XqG2FM4A9nOJVQ0FecL61",
+        },
+        .tp_dot = .{
+            .url = "https://github.com/rydesun/tree-sitter-dot/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJb3AgB2I_rkXPxhxRnrCr3uWktdf9jbaBVxf6SO",
+        },
+        .tp_earthfile = .{
+            .url = "https://github.com/glehmann/tree-sitter-earthfile/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGyjPwBjhStpzupZoSQVNAR28NS-_CX9SaOYMH73",
+        },
+        .tp_ebnf = .{
+            .url = "https://github.com/RubixDev/ebnf/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADBaAwBFXLXBWKkuhg_AB_mxbWGLJm1zVb6By6oO",
+        },
+        .tp_editorconfig = .{
+            .url = "https://github.com/ValdezFOmar/tree-sitter-editorconfig/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANa6AgCp2Vg_fMh6plcxaRHXWnpVybpeKKWSGHFo",
+        },
+        .tp_eds = .{
+            .url = "https://github.com/uyha/tree-sitter-eds/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFfcAAD9o-WfzG3M77BCKeleIeyEucGhHhmkZkgO",
+        },
+        .tp_eex = .{
+            .url = "https://github.com/connorlay/tree-sitter-eex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAP7cAAD6o7inTNXmZ15wWcxsmwmOasjd38DajtA1",
+        },
+        .tp_elixir = .{
+            .url = "https://github.com/elixir-lang/tree-sitter-elixir/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHFBzADLXh_O541oJa7-c22w7ANweScZzPJBuo-v",
+        },
+        .tp_elm = .{
+            .url = "https://github.com/elm-tooling/tree-sitter-elm/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACBmJAAUzDQw6vsNC-Z0kRy8Rqr9p8ElqXycOGCx",
+        },
+        .tp_elsa = .{
+            .url = "https://github.com/glapa-grossklag/tree-sitter-elsa/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMm5AQCkJEn-GBiVm2XW22duApisZtfpZ-zD0y2E",
+        },
+        .tp_elvish = .{
+            .url = "https://github.com/elves/tree-sitter-elvish/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANc5CgDjtLm3ql1jEVtRW8lazxLhdCy0L6Vizdnl",
+        },
+        .tp_enforce = .{
+            .url = "https://github.com/simonvic/tree-sitter-enforce/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAK_pFwA1gD9ByVLPcoqu-jmtE7XE5ckIxn0TwmkT",
+        },
+        .tp_erlang = .{
+            .url = "https://github.com/WhatsApp/tree-sitter-erlang/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAAVWKgC44vrL1kvl8SLUnqNkFU4guLAaXK73RmYK",
+        },
+        .tp_facility = .{
+            .url = "https://github.com/FacilityApi/tree-sitter-facility/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMlIAwAlsl0x9N7e84W9FLR_ugAm1Cnp2mdd0CxO",
+        },
+        .tp_faust = .{
+            .url = "https://github.com/khiner/tree-sitter-faust/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHsdGwB_jMWE8-g8YNuRMF2Lu7FCMHsur8F246kK",
+        },
+        .tp_fennel = .{
+            .url = "https://github.com/alexmozaidze/tree-sitter-fennel/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAE9HOACMa18NejabSo4gTomtlLo1nXV-2BSltkd7",
+        },
+        .tp_fidl = .{
+            .url = "https://github.com/google/tree-sitter-fidl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACoYBgAYWO1mOM_K7bSN1X77XYj2QunYVtK02Jut",
+        },
+        .tp_fish = .{
+            .url = "https://github.com/ram02z/tree-sitter-fish/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANLsCQCVxEL0PSC2oD0RrzlWTr1W5Y2aXqsGHXJd",
+        },
+        .tp_foam = .{
+            .url = "https://github.com/FoamScience/tree-sitter-foam/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHIzCgDTCV6HoqAtf2K27lXuoDl7W3XWG1XudHr5",
+        },
+        .tp_forth = .{
+            .url = "https://github.com/AlexanderBrevig/tree-sitter-forth/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAANABwCYLoiiyCZX7w_sUcIR7VINJ95H5GAer4hc",
+        },
+        .tp_fortran = .{
+            .url = "https://github.com/stadelmanma/tree-sitter-fortran/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJ0zQgKKtzb0-wDQjY1pewE7RXmpAHVsKuwLT0e3",
+        },
+        .tp_fsh = .{
+            .url = "https://github.com/mgramigna/tree-sitter-fsh/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKiYDADIdSd9w7HUN3MzaWETwb8eIM8ADp8FmJ0C",
+        },
+        .tp_fsharp = .{
+            .url = "https://github.com/ionide/tree-sitter-fsharp/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOUkhQQRLQD8WWlYUgsnlkHDeXLQ09Wl7ynWLgXI",
+        },
+        .tp_gap = .{
+            .url = "https://github.com/gap-system/tree-sitter-gap/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAN-DEwAtQTLxk9q4oNMKg9eT73MOdobTzLrJzdnw",
+        },
+        .tp_gaptst = .{
+            .url = "https://github.com/gap-system/tree-sitter-gaptst/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOj4AwBMp1CMwtVWc3eciLeSU6fv4Y_reIZ5Huay",
+        },
+        .tp_gdshader = .{
+            .url = "https://github.com/GodOfAvacyn/tree-sitter-gdshader/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFP9OgrH_ntQHBHilphpUvox5IT-qW2AvQ3k_O6T",
+        },
+        .tp_git_config = .{
+            .url = "https://github.com/the-mikedavis/tree-sitter-git-config/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEeICwBVM-CzjotAytTcBBwpZXfLHQ-cSb7bzKoz",
+        },
+        .tp_git_rebase = .{
+            .url = "https://github.com/the-mikedavis/tree-sitter-git-rebase/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACcjBADDiwpsLBG-7AU4d8AUIwI8dU7WBruki9ku",
+        },
+        .tp_gitattributes = .{
+            .url = "https://github.com/ObserverOfTime/tree-sitter-gitattributes/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANBEAwCwl7_Jht-oYIYyJ60LDOoJd8SmqyQ6ugVu",
+        },
+        .tp_gitcommit = .{
+            .url = "https://github.com/gbprod/tree-sitter-gitcommit/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMwQNwB44XH7wWhWYIXNho3vCYVrymBGCFYeakJl",
+        },
+        .tp_gitignore = .{
+            .url = "https://github.com/shunsambongi/tree-sitter-gitignore/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMagAQBYAM2YREeH8IYCaf7OjaKojrC_bgw69cQQ",
+        },
+        .tp_gleam = .{
+            .url = "https://github.com/gleam-lang/tree-sitter-gleam/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPwWNgBHrvlhA8sC9jpqWchOgJFX7dKCVd_d7WjE",
+        },
+        .tp_glimmer = .{
+            .url = "https://github.com/ember-tooling/tree-sitter-glimmer/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAB68BwAJCl97OC_E97ctx2gcX1GRRhiPSlc5C46G",
+        },
+        .tp_glimmer_javascript = .{
+            .url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-javascript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGGnLAC6VNWL6KtYLZm8GQfdkClhjIynzCq-PisV",
+        },
+        .tp_glimmer_typescript = .{
+            .url = "https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAO7EkAAmElLmMDx2RpzOldbC79PPkmeWI97Isbij",
+        },
+        .tp_gnuplot = .{
+            .url = "https://github.com/dpezto/tree-sitter-gnuplot/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANZcmQGKUTNI87peyJr8gUdm2T5ZePvvy6R0JEIo",
+        },
+        .tp_goctl = .{
+            .url = "https://github.com/chaozwn/tree-sitter-goctl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAB88BAC6VwQfxGz6pLj0zQa6ob66Ipp59_-jfI6R",
+        },
+        .tp_godot_resource = .{
+            .url = "https://github.com/PrestonKnopp/tree-sitter-godot-resource/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMqTAgBaNkmTwcMTWvmVUnQlelUS7gWeCx_rfQqw",
+        },
+        .tp_gomod = .{
+            .url = "https://github.com/camdencheek/tree-sitter-go-mod/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIb9AgAdYSGZMYBaRk2VuR3Js5jlwIFimcTKMxMN",
+        },
+        .tp_gowork = .{
+            .url = "https://github.com/omertuc/tree-sitter-go-work/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPxsAQAnmXkncrXZZqJu9pVT5zvTRdIppclUCSjT",
+        },
+        .tp_graphql = .{
+            .url = "https://github.com/bkegley/tree-sitter-graphql/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAP-EBgA21dL3IAjEYMbw_ar3KNWb0dR4ppoAUe67",
+        },
+        .tp_gren = .{
+            .url = "https://github.com/MaeBrooks/tree-sitter-gren/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOJlFwA8KMBW1aAhQJFSTttRsEz5do48oEDjhxdv",
+        },
+        .tp_groovy = .{
+            .url = "https://github.com/murtaza64/tree-sitter-groovy/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPudZQBd2sQzyxKho1u8dSG3j1PJrarUV1nM8pl4",
+        },
+        .tp_hack = .{
+            .url = "https://github.com/slackhq/tree-sitter-hack/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAB2hswDcaymAdw6SajqoAMoNvMgJdzDHicF4mzMg",
+        },
+        .tp_haskell_persistent = .{
+            .url = "https://github.com/MercuryTechnologies/tree-sitter-haskell-persistent/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPZ9DAAAKumR6-Qk0Vo2MXEgucnF-sXZBPDIaHG0",
+        },
+        .tp_heex = .{
+            .url = "https://github.com/connorlay/tree-sitter-heex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANdtBABaAu_BwYn2F8-37doAO6jX0_KXTF25Z_vo",
+        },
+        .tp_hjson = .{
+            .url = "https://github.com/winston0410/tree-sitter-hjson/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPRXBwBB09bB3WPxG-BD0drJwyyqJAJah7WFJBlK",
+        },
+        .tp_hocon = .{
+            .url = "https://github.com/antosha417/tree-sitter-hocon/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANVCBQA23rtbdamIvYkUcBUOZ86_qVoZGtinJOTJ",
+        },
+        .tp_hoon = .{
+            .url = "https://github.com/urbit-pilled/tree-sitter-hoon/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGnF4gCOCvFMyDj1_JEYFrCRPAqvlP4Y1PNTnosz",
+        },
+        .tp_htmldjango = .{
+            .url = "https://github.com/interdependence/tree-sitter-htmldjango/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJn0BgDS_zDcIt_hAQyxwgg1qnvB_KbeTH0xSsDi",
+        },
+        .tp_http = .{
+            .url = "https://github.com/rest-nvim/tree-sitter-http/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAN76BwBDOQ8NwXZyJzl-MsioXgqJ1xBIDAYpFXaK",
+        },
+        .tp_hurl = .{
+            .url = "https://github.com/pfeiferj/tree-sitter-hurl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPhIDgBrCkPfjuprfyvAbSBztQ_Oe3J14vM27AIJ",
+        },
+        .tp_idl = .{
+            .url = "https://github.com/cathaysia/tree-sitter-idl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHz6LQD1Oj-7e_L-KFcqwVQkYzFcDgn2N27WB57y",
+        },
+        .tp_idris = .{
+            .url = "https://github.com/kayhide/tree-sitter-idris/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMlHxAAFBMj700-mvPVrQcomHegDFSXgr8U0xXXl",
+        },
+        .tp_ini = .{
+            .url = "https://github.com/justinmk/tree-sitter-ini/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFnyAQCmDa5r3XG6RDQkWCpDPENQAmtGDLZh4V8z",
+        },
+        .tp_inko = .{
+            .url = "https://github.com/inko-lang/tree-sitter-inko/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALvFLABrOJwYlch7ws7vKxbNKK8yuJPQcF-cD9EF",
+        },
+        .tp_janet_simple = .{
+            .url = "https://github.com/sogaiu/tree-sitter-janet-simple/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIJhAwAXPjM1MEtREuXZJc3xYh6LlO3csxnnBZs8",
+        },
+        .tp_javadoc = .{
+            .url = "https://github.com/rmuir/tree-sitter-javadoc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALL8CgDusopBu0T_hY58IOAf2bf1w7WVR2ZR9-kL",
+        },
+        .tp_jinja = .{
+            .url = "https://github.com/cathaysia/tree-sitter-jinja/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOQ5HwB87CkG4ZKzY6DyH7VYdxKHLXB99CjdrsOk",
+        },
+        .tp_jinja_inline = .{
+            .url = "https://github.com/cathaysia/tree-sitter-jinja/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOQ5HwB87CkG4ZKzY6DyH7VYdxKHLXB99CjdrsOk",
+        },
+        .tp_jq = .{
+            .url = "https://github.com/flurie/tree-sitter-jq/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANS4DQB58EmOYKYWjxYo8m1YnnldXOAy_CLdtSe5",
+        },
+        .tp_json5 = .{
+            .url = "https://github.com/Joakker/tree-sitter-json5/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJQKAgA2qHpD0AhHiJgqkdBAvt-JJHbwYJj8gj9H",
+        },
+        .tp_jsonnet = .{
+            .url = "https://github.com/sourcegraph/tree-sitter-jsonnet/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGJ8BgD44TodgrZzLy_bF9vy1xc4zo51cljhOwq0",
+        },
+        .tp_just = .{
+            .url = "https://github.com/IndianBoy42/tree-sitter-just/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKnPCQAnS9QCo8I1LQhiEQCLRgyPfuQQ5L7RwgJJ",
+        },
+        .tp_kcl = .{
+            .url = "https://github.com/kcl-lang/tree-sitter-kcl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAP5vagAJBJzPe13b-3Rx9baxx24p2HG6KgYJ3u-E",
+        },
+        .tp_koto = .{
+            .url = "https://github.com/koto-lang/tree-sitter-koto/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANPd9wEf_kuWPkXsCQXV_ixwUnP4OZDwrAT7CYeb",
+        },
+        .tp_kusto = .{
+            .url = "https://github.com/Willem-J-an/tree-sitter-kusto/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANe7BQCrgq9nJkdrkvGKxY7KDY073S7ZOFjmIdH5",
+        },
+        .tp_lalrpop = .{
+            .url = "https://github.com/traxys/tree-sitter-lalrpop/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAK_ZBwDgFppDtXX6RY800QoUvW2kKMjnsffomG3L",
+        },
+        .tp_ledger = .{
+            .url = "https://github.com/cbarrete/tree-sitter-ledger/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALxeCQBfyx5g7_3ZfD4rgqfBoMjQpPxmvFFwvbwB",
+        },
+        .tp_leo = .{
+            .url = "https://github.com/r001/tree-sitter-leo/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGdLPQAQyfTVjU18XoIuIzOrLEyTfP93f9XM8Qv0",
+        },
+        .tp_liquid = .{
+            .url = "https://github.com/hankthetank27/tree-sitter-liquid/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHpmFQC9gKC2F_nVPrCsNz_G5pAeYkQnMTcTkof9",
+        },
+        .tp_liquidsoap = .{
+            .url = "https://github.com/savonet/tree-sitter-liquidsoap/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGhESgAnW4af5BzMO33HNORXu8egLDthJG2jLAKH",
+        },
+        .tp_llvm = .{
+            .url = "https://github.com/benwilliamgraham/tree-sitter-llvm/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAM8RZQB-zLqgt31qohFF2HEvc2W6i0583cdfqhxV",
+        },
+        .tp_m68k = .{
+            .url = "https://github.com/grahambates/tree-sitter-m68k/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEu7OwA6rbqe9eqqxj2JOl3Xl_phOhx2XXyO-r9U",
+        },
+        .tp_menhir = .{
+            .url = "https://github.com/Kerl13/tree-sitter-menhir/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPWdBQD_pK3sjxRx5jjyChVDDe_XN4AJrkt5vqiz",
+        },
+        .tp_mermaid = .{
+            .url = "https://github.com/monaqa/tree-sitter-mermaid/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIbIEgBEoqquu9zeZ5ID6MsWj8MbE0R205MRIIJf",
+        },
+        .tp_mlir = .{
+            .url = "https://github.com/artagnon/tree-sitter-mlir/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHfhvgDjjLWGdaBXUSWqCzk-bSzQRam81y2Fu3Ii",
+        },
+        .tp_nasm = .{
+            .url = "https://github.com/naclsn/tree-sitter-nasm/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABZgVADNwShjWu6FlEgqOlKX4UW9xXuwKI8wfwm1",
+        },
+        .tp_nginx = .{
+            .url = "https://github.com/opa-oz/tree-sitter-nginx/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAL0dCQDl6OPuKts4ofgAoUCAIJuviLKyidexcogO",
+        },
+        .tp_nickel = .{
+            .url = "https://github.com/nickel-lang/tree-sitter-nickel/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALApGwDGYA2pCFHqo1plGK0WG3jnM3OxWkOm8QS-",
+        },
+        .tp_nim = .{
+            .url = "https://github.com/alaviss/tree-sitter-nim/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAO4DjAK6aOgxjhQpLZoWpDHID5lVv9seU8gXAnFL",
+        },
+        .tp_nim_format_string = .{
+            .url = "https://github.com/aMOPel/tree-sitter-nim-format-string/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKICAgDv4MdXAqM-NmTauskpzUKL4SHe79FhBJTB",
+        },
+        .tp_ninja = .{
+            .url = "https://github.com/alemuller/tree-sitter-ninja/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJVIAwC3W7XjP905hT7uhZ-h30B1oFTidr30-u-W",
+        },
+        .tp_nix = .{
+            .url = "https://github.com/cstrahan/tree-sitter-nix/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABFxCwC6qZnUR1oXaMr6C1YLj3__iIQ1dukoDpag",
+        },
+        .tp_norg = .{
+            .url = "https://github.com/nvim-neorg/tree-sitter-norg/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADVGkgHs65hmEVRlygEyO_nhHopPTORY39u7EHCB",
+        },
+        .tp_nu = .{
+            .url = "https://github.com/nushell/tree-sitter-nu/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAN5TlADjgsVFy8zNhoekUCaHXu-bzMTGy8SSA0xg",
+        },
+        .tp_objdump = .{
+            .url = "https://github.com/ColinKennedy/tree-sitter-objdump/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAF6QAgBmCZDu7kfP_x5Ii2MQXwY6EZYFMF96SWGX",
+        },
+        .tp_ocamllex = .{
+            .url = "https://github.com/atom-ocaml/tree-sitter-ocamllex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAL6XAwCaV6Sl-Nljl4p5mBsIm11QKUDHBGIw_wuO",
+        },
+        .tp_pascal = .{
+            .url = "https://github.com/Isopod/tree-sitter-pascal/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMmnUgA4hx9Tv_Vl5uDuzQ8r4gSH6J1CuwlZ5YOm",
+        },
+        .tp_passwd = .{
+            .url = "https://github.com/ath3/tree-sitter-passwd/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAC6AAAAFVo7jqB10auBL_iQTgiUiLeODHw2rqhw4",
+        },
+        .tp_phpdoc = .{
+            .url = "https://github.com/claytonrcarter/tree-sitter-phpdoc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKfvGABMWISgkWRgHeaHaIs2n01fcqRw3XFr6eNs",
+        },
+        .tp_pioasm = .{
+            .url = "https://github.com/leo60228/tree-sitter-pioasm/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIk-BQAnn2lfCbCPQyktksVX6iE9f22uoctFYevU",
+        },
+        .tp_powershell = .{
+            .url = "https://github.com/airbus-cert/tree-sitter-powershell/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIjtOwDPuUK1LJLBJBkJ5xH0Yf5b2xWvVBQORwXD",
+        },
+        .tp_prisma = .{
+            .url = "https://github.com/victorhqc/tree-sitter-prisma/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIHVBQAi2cr8xnt_6YkfkseME3BgBanBUKFHqVjf",
+        },
+        .tp_problog = .{
+            .url = "https://github.com/foxyseta/tree-sitter-prolog/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADcsBwCSM6dJq9tdtCEOrFNTbxBK-uvcvGZ4ChSH",
+        },
+        .tp_prolog = .{
+            .url = "https://github.com/foxyseta/tree-sitter-prolog/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADcsBwCSM6dJq9tdtCEOrFNTbxBK-uvcvGZ4ChSH",
+        },
+        .tp_promql = .{
+            .url = "https://github.com/MichaHoffmann/tree-sitter-promql/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJGYBABK92uAs-knFQ_9pnNsvjwn3Q6nzWRuOTD5",
+        },
+        .tp_proto = .{
+            .url = "https://github.com/treywood/tree-sitter-proto/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAE2xBgCD0olZb3qdS9V5MmkcAg2jAnHmFT15O5Vx",
+        },
+        .tp_prql = .{
+            .url = "https://github.com/PRQL/tree-sitter-prql/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGyyDQAMNiD24irgesIYeKv0ultPZ1pecjJnjZRL",
+        },
+        .tp_pug = .{
+            .url = "https://github.com/zealot128/tree-sitter-pug/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMw0EgBvA8C-NE_Ejw_2ZGSRfXuuOHTCmVMUuvgm",
+        },
+        .tp_purescript = .{
+            .url = "https://github.com/postsolar/tree-sitter-purescript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANTWiAA4xjDTd67-AGGGXa-FmP92-QHFZX5vHm2Z",
+        },
+        .tp_qmljs = .{
+            .url = "https://github.com/yuja/tree-sitter-qmljs/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIjzngCCGA0vho0DKxyeFpLxMYiMwQrSlYFladlD",
+        },
+        .tp_r = .{
+            .url = "https://github.com/r-lib/tree-sitter-r/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAL4aRwB1GARJdqyZ4AZweEGA7EdCk84hubDrt2hP",
+        },
+        .tp_racket = .{
+            .url = "https://github.com/6cdh/tree-sitter-racket/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAH0TEADTGp13OT1WmXb0HR_tFk3xwszpEZVg4adA",
+        },
+        .tp_ralph = .{
+            .url = "https://github.com/alephium/tree-sitter-ralph/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHL6HQCC2rdDZtrxX9lfIV2P4qPrDTPkO01J9Spx",
+        },
+        .tp_rasi = .{
+            .url = "https://github.com/Fymyte/tree-sitter-rasi/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAItgDQA1pv_Pirc4qfLzeV6UvruS9WUYGyF04RFD",
+        },
+        .tp_razor = .{
+            .url = "https://github.com/tris203/tree-sitter-razor/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALoLKwPbbZB3-zxkViD-49PeitF-hdoKTodWCEhS",
+        },
+        .tp_rbs = .{
+            .url = "https://github.com/joker1007/tree-sitter-rbs/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEiNDwDA532sJVCstQEt5439Y2zBI8O5n_JW0dOX",
+        },
+        .tp_rego = .{
+            .url = "https://github.com/FallenAngel97/tree-sitter-rego/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJGUEgAL3gGSXJH66ktZRh9NfMQIb__UMtdJ0PfL",
+        },
+        .tp_rescript = .{
+            .url = "https://github.com/rescript-lang/tree-sitter-rescript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAASKegCDKddm83pRHn_d_YyzfYdJcdTb_fFeD40f",
+        },
+        .tp_rnoweb = .{
+            .url = "https://github.com/bamonroe/tree-sitter-rnoweb/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIIMCAGpr-HVHxsDMe97DMgrcCocegz8wPOo1crO",
+        },
+        .tp_robot = .{
+            .url = "https://github.com/Hubro/tree-sitter-robot/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFEMCQCwjls9XWrOOPACoNpUthiZ-bVmd73K-xQh",
+        },
+        .tp_robots = .{
+            .url = "https://github.com/opa-oz/tree-sitter-robots-txt/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHsaAgCf3jNJeczYjx9wzRq_8aSDc-CNdHSaRrKV",
+        },
+        .tp_roc = .{
+            .url = "https://github.com/faldor20/tree-sitter-roc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADvzNQCRTvWAuSjzZgJstMfVYL-S_9M0ZhJBgLD-",
+        },
+        .tp_rst = .{
+            .url = "https://github.com/stsewd/tree-sitter-rst/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAOf5EQC2JcHndnXC2hQBmLMKmoQ08kHONIcpo_7I",
+        },
+        .tp_scfg = .{
+            .url = "https://github.com/rockorager/tree-sitter-scfg/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGoNAQC1HY7n9TdNQLiiRBNgzi6AJB8P5rfeHm32",
+        },
+        .tp_scheme = .{
+            .url = "https://github.com/6cdh/tree-sitter-scheme/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFukDwDTG4O_E6mPN0ieVviCocMh0qum_ESUCkaq",
+        },
+        .tp_sflog = .{
+            .url = "https://github.com/aheber/tree-sitter-sfapex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEenxQCAfb1Y3W5o1LC8wKM1ibrjEcU0EQsWquW8",
+        },
+        .tp_slim = .{
+            .url = "https://github.com/theoo/tree-sitter-slim/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIjRDgCQDF6PZ2FWytYk_ld0pDLXwTwvP0VFoNZy",
+        },
+        .tp_slint = .{
+            .url = "https://github.com/slint-ui/tree-sitter-slint/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAH5sPQA0EfHSkNe5Ve3UbLfJWycaEhw9qQZtonuQ",
+        },
+        .tp_smithy = .{
+            .url = "https://github.com/indoorvivants/tree-sitter-smithy/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACxyCgCAJuHi8OxhAr04W9mrdvaFK1IWNfwyhdog",
+        },
+        .tp_snakemake = .{
+            .url = "https://github.com/osthomas/tree-sitter-snakemake/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAAx5TwDFRt60FnvMiicDyLLz48B_34XLhFx2yZWF",
+        },
+        .tp_solidity = .{
+            .url = "https://github.com/JoranHonig/tree-sitter-solidity/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAFk_MACWDp27tOUsThaLIUqI07CJbaTXXQpFtks-",
+        },
+        .tp_soql = .{
+            .url = "https://github.com/aheber/tree-sitter-sfapex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEenxQCAfb1Y3W5o1LC8wKM1ibrjEcU0EQsWquW8",
+        },
+        .tp_sosl = .{
+            .url = "https://github.com/aheber/tree-sitter-sfapex/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEenxQCAfb1Y3W5o1LC8wKM1ibrjEcU0EQsWquW8",
+        },
+        .tp_sourcepawn = .{
+            .url = "https://github.com/nilshelmig/tree-sitter-sourcepawn/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAK8HQACNNJ61pjwV5hsH21WXvxPPjQA7hcGypViU",
+        },
+        .tp_sparql = .{
+            .url = "https://github.com/GordianDziwis/tree-sitter-sparql/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAIAUIwBufXXM793RZOpg4eqjifcdwAc909UHVLql",
+        },
+        .tp_strace = .{
+            .url = "https://github.com/sigmaSd/tree-sitter-strace/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AANJEBAAq4ABgt0WnGzOJSc36Rj2moziwFok1ow_l",
+        },
+        .tp_styled = .{
+            .url = "https://github.com/mskelton/tree-sitter-styled/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAMglDgDb-xGNYZK11vcnzXXvW8e6UpzoGuXE-MPS",
+        },
+        .tp_supercollider = .{
+            .url = "https://github.com/madskjeldgaard/tree-sitter-supercollider/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AABKcVwCwzF0y_k5OQlO-uh85e0_2xJnwyO9_kmV-",
+        },
+        .tp_surface = .{
+            .url = "https://github.com/connorlay/tree-sitter-surface/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAAbfAgCnNODUnABMCvupW0A4SuvPlHKIf2lUDFf6",
+        },
+        .tp_sway = .{
+            .url = "https://github.com/FuelLabs/tree-sitter-sway/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJ-QOQAKCFbWkFKjQYpXwbNWPu3B1kZ7dkx5WWhH",
+        },
+        .tp_sxhkdrc = .{
+            .url = "https://github.com/RaafatTurki/tree-sitter-sxhkdrc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGNaAQAvcj47LB4qLc8Zyu-rfYKQIVPLw_2NcQav",
+        },
+        .tp_systemtap = .{
+            .url = "https://github.com/ok-ryoko/tree-sitter-systemtap/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHPYGwAGjJlkDi750kPdZ8kMDGOoylvl6VTT2H3o",
+        },
+        .tp_tact = .{
+            .url = "https://github.com/tact-lang/tree-sitter-tact/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJCaDwA5y_jYNU5SDXaXdYnbnRwCopm9mYPMknOs",
+        },
+        .tp_templ = .{
+            .url = "https://github.com/vrischmann/tree-sitter-templ/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADLRLgDa5fbMyffdhFOiGiQzaj4aJOx364dEv_bi",
+        },
+        .tp_tera = .{
+            .url = "https://github.com/uncenter/tree-sitter-tera/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAI13EAC4n01Cxk21YasBLgclflM7bhK9rEv8dMST",
+        },
+        .tp_textproto = .{
+            .url = "https://github.com/PorterAtGoogle/tree-sitter-textproto/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAABNAgDWoa3OtxgPLFo_uPIeQNUBsXtxeQ8_tfm4",
+        },
+        .tp_tiger = .{
+            .url = "https://github.com/ambroisie/tree-sitter-tiger/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJP8BgB0G3ow8LfgiPcYLBPH534U-rlWCqx_CNFY",
+        },
+        .tp_tlaplus = .{
+            .url = "https://github.com/tlaplus-community/tree-sitter-tlaplus/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALV7QgJF2kWPFGui7b0nmNgWOPQuwGti2WYwF96H",
+        },
+        .tp_todotxt = .{
+            .url = "https://github.com/arnarg/tree-sitter-todotxt/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHasAADfc3WvSHPAiGxA2c9u-VwFKT1MJmOe45mx",
+        },
+        .tp_turtle = .{
+            .url = "https://github.com/GordianDziwis/tree-sitter-turtle/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAHsVBABbkRuECSnze0K190AUkLNmrUL5DQ2l3M1S",
+        },
+        .tp_twig = .{
+            .url = "https://github.com/gbprod/tree-sitter-twig/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALD3DQBDzcIVHBrSzSD62m8w9mBPdm1x1p9peJEZ",
+        },
+        .tp_typespec = .{
+            .url = "https://github.com/happenslol/tree-sitter-typespec/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAM_WEgBuHLlFABc_S3nOLFRYrz4oSEgsj4P1OPe1",
+        },
+        .tp_typoscript = .{
+            .url = "https://github.com/Teddytrombone/tree-sitter-typoscript/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJSKEACRzxCHU44gJay8f-CjwP9EPq_FOqa9iNRM",
+        },
+        .tp_typst = .{
+            .url = "https://github.com/uben0/tree-sitter-typst/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAEI_fgCCIzHEL9jwV8cNhuOqVfovu9d5dfHBWRBV",
+        },
+        .tp_unison = .{
+            .url = "https://github.com/kylegoetz/tree-sitter-unison/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AALnz6gCf9hSGCHmPNTL_luV10n5Z69Qk2Qn-njNV",
+        },
+        .tp_usd = .{
+            .url = "https://github.com/ColinKennedy/tree-sitter-usd/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAJ1kCQCpU-gEFR2OYr6UOGbrabvhcFEPPrqd5XI-",
+        },
+        .tp_v = .{
+            .url = "https://github.com/vlang/v-analyzer/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAKbU2AAlmLRxdu4AANyUpNZx27puJ1x0l7LjtJfl",
+        },
+        .tp_vala = .{
+            .url = "https://github.com/vala-lang/tree-sitter-vala/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGdsPwD23Qp98aCoj-jzlkEAXdh91mBs_bmTCHhD",
+        },
+        .tp_vento = .{
+            .url = "https://github.com/ventojs/tree-sitter-vento/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGGiDwB7s8fTegJFfDSUNUPQGKSqlU1j7q6-whJd",
+        },
+        .tp_verilog = .{
+            .url = "https://github.com/gmlarumbe/tree-sitter-systemverilog/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAE03ygOjop2BggQLNpq7gU0ijN6cAA-AGXIRgJln",
+        },
+        .tp_vhdl = .{
+            .url = "https://github.com/jpt13653903/tree-sitter-vhdl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACVhswCRvj1k9B3fzXBFS3D49ZB9jJH39Dl7MhjG",
+        },
+        .tp_vhs = .{
+            .url = "https://github.com/charmbracelet/tree-sitter-vhs/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACjDBAADCAO_8qWIy4SNfc0maNwzkrmj_mjGYa6v",
+        },
+        .tp_vimdoc = .{
+            .url = "https://github.com/neovim/tree-sitter-vimdoc/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAI7VCgCGNcliFVFlzzMLgGxp4oENnH9HEHqYo2Gj",
+        },
+        .tp_vrl = .{
+            .url = "https://github.com/belltoy/tree-sitter-vrl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AACKlCQCgMGasTR9Mn4e5HYzlUa9kmy7G0z__6YQ1",
+        },
+        .tp_wgsl = .{
+            .url = "https://github.com/szebniok/tree-sitter-wgsl/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAF2HWgCTeKAxZ7Nr16u4RbQBzckkUPuRKc1mcfnf",
+        },
+        .tp_wing = .{
+            .url = "https://github.com/winglang/tree-sitter-wing/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAPSZHQC9jvX0yTttMjiX_TKk9NfHbKFysAHfoyRr",
+        },
+        .tp_wit = .{
+            .url = "https://github.com/liamwh/tree-sitter-wit/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AADaaCQBX_Mg3WtOyomh_0E7eVqICrf99BGGb_Et5",
+        },
+        .tp_xresources = .{
+            .url = "https://github.com/ValdezFOmar/tree-sitter-xresources/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAGOwAwDr1k_LXayUhqzj4H5_dF51q0zJjFYCKcos",
+        },
+        .tp_yang = .{
+            .url = "https://github.com/Hubro/tree-sitter-yang/archive/refs/heads/master.tar.gz",
+            .hash = "N-V-__8AAI3oDgDg1tI6tSep4QZeYKOInZ9UKA5ROM4GM5Sv",
+        },
     },
     .paths = .{
         "build.zig",
