@@ -42,7 +42,7 @@ pub fn build(b: *std.Build) void {
     const use_all_langs = b.option(bool, "use_all_langs", "Build and Include all language grammars") orelse true;
     const use_langs = b.option([]const []const u8, "use_langs", "List of langs to build (ie. `md`, `c`, `zig`)") orelse &[_][]const u8{};
 
-    const use_third_party = b.option(bool, "third-party", "Include third-party community grammars (not from tree-sitter or tree-sitter-grammars orgs)") orelse false;
+    const use_third_party = b.option(bool, "use_third_party", "Include third-party community grammars (not from tree-sitter or tree-sitter-grammars orgs)") orelse false;
 
     var gb = GrammarBuilder{
         .b = b,
@@ -121,7 +121,6 @@ pub fn build(b: *std.Build) void {
     const ts_wgsl_bevy = b.dependency("tree_sitter_wgsl_bevy", .{});
     gb.addGrammarChecked(ts_wgsl_bevy, "", "wgsl_bevy", "tree_sitter_wgsl_bevy", true, null);
 
-
     const ts_capnp = b.dependency("tree_sitter_capnp", .{});
     gb.addGrammarChecked(ts_capnp, "", "capnp", "tree_sitter_capnp", false, "queries/highlights.scm");
 
@@ -192,7 +191,7 @@ pub fn build(b: *std.Build) void {
     gb.addGrammarChecked(ts_kotlin, "", "kt", "tree_sitter_kotlin", true, null);
 
     const ts_vim = b.dependency("tree_sitter_vim", .{});
-    gb.addGrammarChecked(ts_vim, "", "vim", "tree_sitter_vim", true, null);
+    gb.addGrammarChecked(ts_vim, "", "vim", "tree_sitter_vim", true, "queries/vim/highlights.scm");
 
     const ts_puppet = b.dependency("tree_sitter_puppet", .{});
     gb.addGrammarChecked(ts_puppet, "", "puppet", "tree_sitter_puppet", false, "queries/highlights.scm");
@@ -295,7 +294,6 @@ pub fn build(b: *std.Build) void {
 
     const ts_zig = b.dependency("fork_zig", .{});
     gb.addGrammarChecked(ts_zig, "", "zig", "tree_sitter_zig", false, null);
-
 
     const ts_svelte = b.dependency("tree_sitter_svelte", .{});
     gb.addGrammarChecked(ts_svelte, "", "svelte", "tree_sitter_svelte", true, "queries/highlights.scm");
@@ -403,947 +401,922 @@ pub fn build(b: *std.Build) void {
 
     const tp_ada = b.dependency("tp_ada", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ada, "", "ada", "ada", false, null);
+        gb.addGrammarChecked(tp_ada, "", "ada", "tree_sitter_ada", false, null);
     }
 
     const tp_angular = b.dependency("tp_angular", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_angular, "", "angular", "angular", true, null);
+        gb.addGrammarChecked(tp_angular, "", "angular", "tree_sitter_angular", true, null);
     }
 
     const tp_apex = b.dependency("tp_apex", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_apex, "apex", "apex", "apex", false, null);
+        gb.addGrammarChecked(tp_apex, "apex", "apex", "tree_sitter_apex", false, null);
     }
 
     const tp_asm = b.dependency("tp_asm", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_asm, "", "asm", "asm", false, null);
+        gb.addGrammarChecked(tp_asm, "", "asm", "tree_sitter_asm", false, null);
     }
 
     const tp_astro = b.dependency("tp_astro", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_astro, "", "astro", "astro", true, null);
+        gb.addGrammarChecked(tp_astro, "", "astro", "tree_sitter_astro", true, null);
     }
 
     const tp_authzed = b.dependency("tp_authzed", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_authzed, "", "authzed", "authzed", false, null);
+        gb.addGrammarChecked(tp_authzed, "", "authzed", "tree_sitter_authzed", false, null);
     }
 
     const tp_awk = b.dependency("tp_awk", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_awk, "", "awk", "awk", true, null);
+        gb.addGrammarChecked(tp_awk, "", "awk", "tree_sitter_awk", true, null);
     }
 
     const tp_bass = b.dependency("tp_bass", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_bass, "", "bass", "bass", false, null);
+        gb.addGrammarChecked(tp_bass, "", "bass", "tree_sitter_bass", false, null);
     }
 
     const tp_beancount = b.dependency("tp_beancount", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_beancount, "", "beancount", "beancount", true, null);
+        gb.addGrammarChecked(tp_beancount, "", "beancount", "tree_sitter_beancount", true, null);
     }
 
     const tp_bibtex = b.dependency("tp_bibtex", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_bibtex, "", "bibtex", "bibtex", false, null);
+        gb.addGrammarChecked(tp_bibtex, "", "bibtex", "tree_sitter_bibtex", false, null);
     }
 
     const tp_blade = b.dependency("tp_blade", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_blade, "", "blade", "blade", true, null);
+        gb.addGrammarChecked(tp_blade, "", "blade", "tree_sitter_blade", true, null);
     }
 
     const tp_bp = b.dependency("tp_bp", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_bp, "", "bp", "bp", false, null);
+        gb.addGrammarChecked(tp_bp, "", "bp", "tree_sitter_bp", false, null);
     }
 
     const tp_brightscript = b.dependency("tp_brightscript", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_brightscript, "", "brightscript", "brightscript", false, null);
+        gb.addGrammarChecked(tp_brightscript, "", "brightscript", "tree_sitter_brightscript", false, null);
     }
 
     const tp_caddy = b.dependency("tp_caddy", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_caddy, "", "caddy", "caddy", true, null);
+        gb.addGrammarChecked(tp_caddy, "", "caddy", "tree_sitter_caddy", true, null);
     }
 
     const tp_circom = b.dependency("tp_circom", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_circom, "", "circom", "circom", false, null);
+        gb.addGrammarChecked(tp_circom, "", "circom", "tree_sitter_circom", false, null);
     }
 
     const tp_clojure = b.dependency("tp_clojure", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_clojure, "", "clojure", "clojure", false, null);
+        gb.addGrammarChecked(tp_clojure, "", "clojure", "tree_sitter_clojure", false, null);
     }
 
     const tp_cmake = b.dependency("tp_cmake", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_cmake, "", "cmake", "cmake", true, null);
+        gb.addGrammarChecked(tp_cmake, "", "cmake", "tree_sitter_cmake", true, null);
     }
 
     const tp_comment = b.dependency("tp_comment", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_comment, "", "comment", "comment", true, null);
+        gb.addGrammarChecked(tp_comment, "", "comment", "tree_sitter_comment", true, null);
     }
 
     const tp_cooklang = b.dependency("tp_cooklang", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_cooklang, "", "cooklang", "cooklang", true, null);
+        gb.addGrammarChecked(tp_cooklang, "", "cooklang", "tree_sitter_cooklang", true, null);
     }
 
     const tp_corn = b.dependency("tp_corn", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_corn, "", "corn", "corn", false, null);
+        gb.addGrammarChecked(tp_corn, "", "corn", "tree_sitter_corn", false, null);
     }
 
     const tp_cue = b.dependency("tp_cue", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_cue, "", "cue", "cue", true, null);
+        gb.addGrammarChecked(tp_cue, "", "cue", "tree_sitter_cue", true, null);
     }
 
     const tp_cylc = b.dependency("tp_cylc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_cylc, "", "cylc", "cylc", false, null);
+        gb.addGrammarChecked(tp_cylc, "", "cylc", "tree_sitter_cylc", false, null);
     }
 
     const tp_d = b.dependency("tp_d", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_d, "", "d", "d", true, null);
+        gb.addGrammarChecked(tp_d, "", "d", "tree_sitter_d", true, null);
     }
 
     const tp_dart = b.dependency("tp_dart", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_dart, "", "dart", "dart", true, null);
+        gb.addGrammarChecked(tp_dart, "", "dart", "tree_sitter_dart", true, null);
     }
 
     const tp_desktop = b.dependency("tp_desktop", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_desktop, "", "desktop", "desktop", false, null);
+        gb.addGrammarChecked(tp_desktop, "", "desktop", "tree_sitter_desktop", false, null);
     }
 
     const tp_dhall = b.dependency("tp_dhall", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_dhall, "", "dhall", "dhall", true, null);
+        gb.addGrammarChecked(tp_dhall, "", "dhall", "tree_sitter_dhall", true, null);
     }
 
     const tp_disassembly = b.dependency("tp_disassembly", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_disassembly, "", "disassembly", "disassembly", true, null);
+        gb.addGrammarChecked(tp_disassembly, "", "disassembly", "tree_sitter_disassembly", true, null);
     }
 
     const tp_djot = b.dependency("tp_djot", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_djot, "", "djot", "djot", true, null);
+        gb.addGrammarChecked(tp_djot, "", "djot", "tree_sitter_djot", true, null);
     }
 
     const tp_dockerfile = b.dependency("tp_dockerfile", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_dockerfile, "", "dockerfile", "dockerfile", true, null);
+        gb.addGrammarChecked(tp_dockerfile, "", "dockerfile", "tree_sitter_dockerfile", true, null);
     }
 
     const tp_dot = b.dependency("tp_dot", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_dot, "", "dot", "dot", false, null);
+        gb.addGrammarChecked(tp_dot, "", "dot", "tree_sitter_dot", false, null);
     }
 
     const tp_earthfile = b.dependency("tp_earthfile", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_earthfile, "", "earthfile", "earthfile", true, null);
+        gb.addGrammarChecked(tp_earthfile, "", "earthfile", "tree_sitter_earthfile", true, null);
     }
 
     const tp_ebnf = b.dependency("tp_ebnf", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ebnf, "crates/tree-sitter-ebnf", "ebnf", "ebnf", false, null);
+        gb.addGrammarChecked(tp_ebnf, "crates/tree-sitter-ebnf", "ebnf", "tree_sitter_ebnf", false, null);
     }
 
     const tp_editorconfig = b.dependency("tp_editorconfig", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_editorconfig, "", "editorconfig", "editorconfig", true, null);
+        gb.addGrammarChecked(tp_editorconfig, "", "editorconfig", "tree_sitter_editorconfig", true, null);
     }
 
     const tp_eds = b.dependency("tp_eds", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_eds, "", "eds", "eds", false, null);
+        gb.addGrammarChecked(tp_eds, "", "eds", "tree_sitter_eds", false, null);
     }
 
     const tp_eex = b.dependency("tp_eex", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_eex, "", "eex", "eex", false, null);
+        gb.addGrammarChecked(tp_eex, "", "eex", "tree_sitter_eex", false, null);
     }
 
     const tp_elixir = b.dependency("tp_elixir", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_elixir, "", "elixir", "elixir", true, null);
+        gb.addGrammarChecked(tp_elixir, "", "elixir", "tree_sitter_elixir", true, null);
     }
 
     const tp_elm = b.dependency("tp_elm", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_elm, "", "elm", "elm", true, null);
+        gb.addGrammarChecked(tp_elm, "", "elm", "tree_sitter_elm", true, null);
     }
 
     const tp_elsa = b.dependency("tp_elsa", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_elsa, "", "elsa", "elsa", false, null);
+        gb.addGrammarChecked(tp_elsa, "", "elsa", "tree_sitter_elsa", false, null);
     }
 
     const tp_elvish = b.dependency("tp_elvish", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_elvish, "", "elvish", "elvish", false, null);
+        gb.addGrammarChecked(tp_elvish, "", "elvish", "tree_sitter_elvish", false, null);
     }
 
     const tp_enforce = b.dependency("tp_enforce", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_enforce, "", "enforce", "enforce", false, null);
+        gb.addGrammarChecked(tp_enforce, "", "enforce", "tree_sitter_enforce", false, null);
     }
 
     const tp_erlang = b.dependency("tp_erlang", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_erlang, "", "erlang", "erlang", true, null);
+        gb.addGrammarChecked(tp_erlang, "", "erl", "tree_sitter_erlang", true, null);
     }
 
     const tp_facility = b.dependency("tp_facility", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_facility, "", "facility", "facility", false, null);
+        gb.addGrammarChecked(tp_facility, "", "facility", "tree_sitter_facility", false, null);
     }
 
     const tp_faust = b.dependency("tp_faust", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_faust, "", "faust", "faust", false, null);
+        gb.addGrammarChecked(tp_faust, "", "faust", "tree_sitter_faust", false, null);
     }
 
     const tp_fennel = b.dependency("tp_fennel", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fennel, "", "fennel", "fennel", true, null);
+        gb.addGrammarChecked(tp_fennel, "", "fennel", "tree_sitter_fennel", true, null);
     }
 
     const tp_fidl = b.dependency("tp_fidl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fidl, "", "fidl", "fidl", false, null);
+        gb.addGrammarChecked(tp_fidl, "", "fidl", "tree_sitter_fidl", false, null);
     }
 
     const tp_fish = b.dependency("tp_fish", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fish, "", "fish", "fish", true, null);
+        gb.addGrammarChecked(tp_fish, "", "fish", "tree_sitter_fish", true, null);
     }
 
     const tp_foam = b.dependency("tp_foam", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_foam, "", "foam", "foam", true, null);
+        gb.addGrammarChecked(tp_foam, "", "foam", "tree_sitter_foam", true, null);
     }
 
     const tp_forth = b.dependency("tp_forth", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_forth, "", "forth", "forth", false, null);
+        gb.addGrammarChecked(tp_forth, "", "forth", "tree_sitter_forth", false, null);
     }
 
     const tp_fortran = b.dependency("tp_fortran", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fortran, "", "fortran", "fortran", true, null);
+        gb.addGrammarChecked(tp_fortran, "", "f90", "tree_sitter_fortran", true, null);
     }
 
     const tp_fsh = b.dependency("tp_fsh", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fsh, "", "fsh", "fsh", false, null);
+        gb.addGrammarChecked(tp_fsh, "", "fsh", "tree_sitter_fsh", false, null);
     }
 
     const tp_fsharp = b.dependency("tp_fsharp", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_fsharp, "fsharp", "fsharp", "fsharp", true, null);
+        gb.addGrammarChecked(tp_fsharp, "fsharp", "fs", "tree_sitter_fsharp", true, null);
     }
 
     const tp_gap = b.dependency("tp_gap", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gap, "", "gap", "gap", true, null);
+        gb.addGrammarChecked(tp_gap, "", "gap", "tree_sitter_gap", true, null);
     }
 
     const tp_gaptst = b.dependency("tp_gaptst", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gaptst, "", "gaptst", "gaptst", true, null);
+        gb.addGrammarChecked(tp_gaptst, "", "gaptst", "tree_sitter_gaptst", true, null);
     }
 
     const tp_gdshader = b.dependency("tp_gdshader", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gdshader, "", "gdshader", "gdshader", false, null);
+        gb.addGrammarChecked(tp_gdshader, "", "gdshader", "tree_sitter_gdshader", false, null);
     }
 
     const tp_git_config = b.dependency("tp_git_config", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_git_config, "", "git_config", "git_config", false, null);
+        gb.addGrammarChecked(tp_git_config, "", "git_config", "tree_sitter_git_config", false, null);
     }
 
     const tp_git_rebase = b.dependency("tp_git_rebase", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_git_rebase, "", "git_rebase", "git_rebase", false, null);
-    }
-
-    const tp_gitattributes = b.dependency("tp_gitattributes", .{});
-    if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gitattributes, "", "gitattributes", "gitattributes", false, null);
+        gb.addGrammarChecked(tp_git_rebase, "", "git_rebase", "tree_sitter_git_rebase", false, null);
     }
 
     const tp_gitcommit = b.dependency("tp_gitcommit", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gitcommit, "", "gitcommit", "gitcommit", true, null);
+        gb.addGrammarChecked(tp_gitcommit, "", "gitcommit", "tree_sitter_gitcommit", true, null);
     }
 
     const tp_gitignore = b.dependency("tp_gitignore", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gitignore, "", "gitignore", "gitignore", false, null);
+        gb.addGrammarChecked(tp_gitignore, "", "gitignore", "tree_sitter_gitignore", false, null);
     }
 
     const tp_gleam = b.dependency("tp_gleam", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gleam, "", "gleam", "gleam", true, null);
-    }
-
-    const tp_glimmer = b.dependency("tp_glimmer", .{});
-    if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_glimmer, "", "glimmer", "glimmer", true, null);
-    }
-
-    const tp_glimmer_javascript = b.dependency("tp_glimmer_javascript", .{});
-    if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_glimmer_javascript, "", "glimmer_javascript", "glimmer_javascript", true, null);
-    }
-
-    const tp_glimmer_typescript = b.dependency("tp_glimmer_typescript", .{});
-    if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_glimmer_typescript, "", "glimmer_typescript", "glimmer_typescript", true, null);
+        gb.addGrammarChecked(tp_gleam, "", "gleam", "tree_sitter_gleam", true, null);
     }
 
     const tp_gnuplot = b.dependency("tp_gnuplot", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gnuplot, "", "gnuplot", "gnuplot", true, null);
+        gb.addGrammarChecked(tp_gnuplot, "", "gnuplot", "tree_sitter_gnuplot", true, null);
     }
 
     const tp_goctl = b.dependency("tp_goctl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_goctl, "", "goctl", "goctl", false, null);
+        gb.addGrammarChecked(tp_goctl, "", "goctl", "tree_sitter_goctl", false, null);
     }
 
     const tp_godot_resource = b.dependency("tp_godot_resource", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_godot_resource, "", "godot_resource", "godot_resource", true, null);
+        gb.addGrammarChecked(tp_godot_resource, "", "godot_resource", "tree_sitter_godot_resource", true, null);
     }
 
     const tp_gomod = b.dependency("tp_gomod", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gomod, "", "gomod", "gomod", false, null);
+        gb.addGrammarChecked(tp_gomod, "", "gomod", "tree_sitter_gomod", false, null);
     }
 
     const tp_gowork = b.dependency("tp_gowork", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gowork, "", "gowork", "gowork", false, null);
+        gb.addGrammarChecked(tp_gowork, "", "gowork", "tree_sitter_gowork", false, null);
     }
 
     const tp_graphql = b.dependency("tp_graphql", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_graphql, "", "graphql", "graphql", false, null);
+        gb.addGrammarChecked(tp_graphql, "", "gql", "tree_sitter_graphql", false, null);
     }
 
     const tp_gren = b.dependency("tp_gren", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_gren, "", "gren", "gren", true, null);
+        gb.addGrammarChecked(tp_gren, "", "gren", "tree_sitter_gren", true, null);
     }
 
     const tp_groovy = b.dependency("tp_groovy", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_groovy, "", "groovy", "groovy", false, null);
+        gb.addGrammarChecked(tp_groovy, "", "groovy", "tree_sitter_groovy", false, null);
     }
 
     const tp_hack = b.dependency("tp_hack", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_hack, "", "hack", "hack", true, null);
+        gb.addGrammarChecked(tp_hack, "", "hack", "tree_sitter_hack", true, null);
     }
 
     const tp_haskell_persistent = b.dependency("tp_haskell_persistent", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_haskell_persistent, "", "haskell_persistent", "haskell_persistent", true, null);
+        gb.addGrammarChecked(tp_haskell_persistent, "", "haskell_persistent", "tree_sitter_haskell_persistent", true, null);
     }
 
     const tp_heex = b.dependency("tp_heex", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_heex, "", "heex", "heex", false, null);
+        gb.addGrammarChecked(tp_heex, "", "heex", "tree_sitter_heex", false, null);
     }
 
     const tp_hjson = b.dependency("tp_hjson", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_hjson, "", "hjson", "hjson", false, null);
+        gb.addGrammarChecked(tp_hjson, "", "hjson", "tree_sitter_hjson", false, null);
     }
 
     const tp_hocon = b.dependency("tp_hocon", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_hocon, "", "hocon", "hocon", false, null);
+        gb.addGrammarChecked(tp_hocon, "", "hocon", "tree_sitter_hocon", false, null);
     }
 
     const tp_hoon = b.dependency("tp_hoon", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_hoon, "", "hoon", "hoon", true, null);
+        gb.addGrammarChecked(tp_hoon, "", "hoon", "tree_sitter_hoon", true, null);
     }
 
     const tp_htmldjango = b.dependency("tp_htmldjango", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_htmldjango, "", "htmldjango", "htmldjango", false, null);
+        gb.addGrammarChecked(tp_htmldjango, "", "htmldjango", "tree_sitter_htmldjango", false, null);
     }
 
     const tp_http = b.dependency("tp_http", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_http, "", "http", "http", false, null);
+        gb.addGrammarChecked(tp_http, "", "http", "tree_sitter_http", false, null);
     }
 
     const tp_hurl = b.dependency("tp_hurl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_hurl, "", "hurl", "hurl", false, null);
+        gb.addGrammarChecked(tp_hurl, "", "hurl", "tree_sitter_hurl", false, null);
     }
 
     const tp_idl = b.dependency("tp_idl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_idl, "", "idl", "idl", false, null);
+        gb.addGrammarChecked(tp_idl, "", "idl", "tree_sitter_idl", false, null);
     }
 
     const tp_idris = b.dependency("tp_idris", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_idris, "", "idris", "idris", true, null);
+        gb.addGrammarChecked(tp_idris, "", "idris", "tree_sitter_idris", true, null);
     }
 
     const tp_ini = b.dependency("tp_ini", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ini, "", "ini", "ini", false, null);
+        gb.addGrammarChecked(tp_ini, "", "ini", "tree_sitter_ini", false, null);
     }
 
     const tp_inko = b.dependency("tp_inko", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_inko, "", "inko", "inko", false, null);
+        gb.addGrammarChecked(tp_inko, "", "inko", "tree_sitter_inko", false, null);
     }
 
     const tp_janet_simple = b.dependency("tp_janet_simple", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_janet_simple, "", "janet_simple", "janet_simple", true, null);
+        gb.addGrammarChecked(tp_janet_simple, "", "janet_simple", "tree_sitter_janet_simple", true, null);
     }
 
     const tp_javadoc = b.dependency("tp_javadoc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_javadoc, "", "javadoc", "javadoc", true, null);
+        gb.addGrammarChecked(tp_javadoc, "", "javadoc", "tree_sitter_javadoc", true, null);
     }
 
     const tp_jinja = b.dependency("tp_jinja", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_jinja, "tree-sitter-jinja", "jinja", "jinja", true, null);
+        gb.addGrammarChecked(tp_jinja, "tree-sitter-jinja", "jinja", "tree_sitter_jinja", true, null);
     }
 
     const tp_jinja_inline = b.dependency("tp_jinja_inline", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_jinja_inline, "tree-sitter-jinja_inline", "jinja_inline", "jinja_inline", true, null);
+        gb.addGrammarChecked(tp_jinja_inline, "tree-sitter-jinja_inline", "jinja_inline", "tree_sitter_jinja_inline", true, null);
     }
 
     const tp_jq = b.dependency("tp_jq", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_jq, "", "jq", "jq", false, null);
+        gb.addGrammarChecked(tp_jq, "", "jq", "tree_sitter_jq", false, null);
     }
 
     const tp_json5 = b.dependency("tp_json5", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_json5, "", "json5", "json5", false, null);
+        gb.addGrammarChecked(tp_json5, "", "json5", "tree_sitter_json5", false, null);
     }
 
     const tp_jsonnet = b.dependency("tp_jsonnet", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_jsonnet, "", "jsonnet", "jsonnet", true, null);
+        gb.addGrammarChecked(tp_jsonnet, "", "jsonnet", "tree_sitter_jsonnet", true, null);
     }
 
     const tp_just = b.dependency("tp_just", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_just, "", "just", "just", true, null);
+        gb.addGrammarChecked(tp_just, "", "just", "tree_sitter_just", true, null);
     }
 
     const tp_kcl = b.dependency("tp_kcl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_kcl, "", "kcl", "kcl", true, null);
+        gb.addGrammarChecked(tp_kcl, "", "kcl", "tree_sitter_kcl", true, null);
     }
 
     const tp_koto = b.dependency("tp_koto", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_koto, "", "koto", "koto", true, null);
+        gb.addGrammarChecked(tp_koto, "", "koto", "tree_sitter_koto", true, null);
     }
 
     const tp_kusto = b.dependency("tp_kusto", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_kusto, "", "kusto", "kusto", false, null);
+        gb.addGrammarChecked(tp_kusto, "", "kusto", "tree_sitter_kusto", false, null);
     }
 
     const tp_lalrpop = b.dependency("tp_lalrpop", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_lalrpop, "", "lalrpop", "lalrpop", true, null);
+        gb.addGrammarChecked(tp_lalrpop, "", "lalrpop", "tree_sitter_lalrpop", true, null);
     }
 
     const tp_ledger = b.dependency("tp_ledger", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ledger, "", "ledger", "ledger", false, null);
+        gb.addGrammarChecked(tp_ledger, "", "ledger", "tree_sitter_ledger", false, null);
     }
 
     const tp_leo = b.dependency("tp_leo", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_leo, "", "leo", "leo", false, null);
+        gb.addGrammarChecked(tp_leo, "", "leo", "tree_sitter_leo", false, null);
     }
 
     const tp_liquid = b.dependency("tp_liquid", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_liquid, "", "liquid", "liquid", true, null);
+        gb.addGrammarChecked(tp_liquid, "", "liquid", "tree_sitter_liquid", true, null);
     }
 
     const tp_liquidsoap = b.dependency("tp_liquidsoap", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_liquidsoap, "", "liquidsoap", "liquidsoap", true, null);
+        gb.addGrammarChecked(tp_liquidsoap, "", "liquidsoap", "tree_sitter_liquidsoap", true, null);
     }
 
     const tp_llvm = b.dependency("tp_llvm", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_llvm, "", "llvm", "llvm", false, null);
+        gb.addGrammarChecked(tp_llvm, "", "llvm", "tree_sitter_llvm", false, null);
     }
 
     const tp_m68k = b.dependency("tp_m68k", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_m68k, "", "m68k", "m68k", false, null);
+        gb.addGrammarChecked(tp_m68k, "", "m68k", "tree_sitter_m68k", false, null);
     }
 
     const tp_menhir = b.dependency("tp_menhir", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_menhir, "", "menhir", "menhir", true, null);
+        gb.addGrammarChecked(tp_menhir, "", "menhir", "tree_sitter_menhir", true, null);
     }
 
     const tp_mermaid = b.dependency("tp_mermaid", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_mermaid, "", "mermaid", "mermaid", false, null);
+        gb.addGrammarChecked(tp_mermaid, "", "mermaid", "tree_sitter_mermaid", false, null);
     }
 
     const tp_mlir = b.dependency("tp_mlir", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_mlir, "", "mlir", "mlir", false, null);
+        gb.addGrammarChecked(tp_mlir, "", "mlir", "tree_sitter_mlir", false, null);
     }
 
     const tp_nasm = b.dependency("tp_nasm", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nasm, "", "nasm", "nasm", false, null);
+        gb.addGrammarChecked(tp_nasm, "", "nasm", "tree_sitter_nasm", false, null);
     }
 
     const tp_nginx = b.dependency("tp_nginx", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nginx, "", "nginx", "nginx", true, null);
+        gb.addGrammarChecked(tp_nginx, "", "nginx", "tree_sitter_nginx", true, null);
     }
 
     const tp_nickel = b.dependency("tp_nickel", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nickel, "", "nickel", "nickel", true, null);
+        gb.addGrammarChecked(tp_nickel, "", "nickel", "tree_sitter_nickel", true, null);
     }
 
     const tp_nim = b.dependency("tp_nim", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nim, "", "nim", "nim", true, null);
+        gb.addGrammarChecked(tp_nim, "", "nim", "tree_sitter_nim", true, null);
     }
 
     const tp_nim_format_string = b.dependency("tp_nim_format_string", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nim_format_string, "", "nim_format_string", "nim_format_string", false, null);
+        gb.addGrammarChecked(tp_nim_format_string, "", "nim_format_string", "tree_sitter_nim_format_string", false, null);
     }
 
     const tp_ninja = b.dependency("tp_ninja", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ninja, "", "ninja", "ninja", false, null);
+        gb.addGrammarChecked(tp_ninja, "", "ninja", "tree_sitter_ninja", false, null);
     }
 
     const tp_nix = b.dependency("tp_nix", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nix, "", "nix", "nix", true, null);
-    }
-
-    const tp_norg = b.dependency("tp_norg", .{});
-    if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_norg, "", "norg", "norg", true, null);
+        gb.addGrammarChecked(tp_nix, "", "nix", "tree_sitter_nix", true, null);
     }
 
     const tp_nu = b.dependency("tp_nu", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_nu, "", "nu", "nu", true, null);
+        gb.addGrammarChecked(tp_nu, "", "nu", "tree_sitter_nu", true, null);
     }
 
     const tp_objdump = b.dependency("tp_objdump", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_objdump, "", "objdump", "objdump", true, null);
+        gb.addGrammarChecked(tp_objdump, "", "objdump", "tree_sitter_objdump", true, null);
     }
 
     const tp_ocamllex = b.dependency("tp_ocamllex", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ocamllex, "", "ocamllex", "ocamllex", true, null);
+        gb.addGrammarChecked(tp_ocamllex, "", "ocamllex", "tree_sitter_ocamllex", true, null);
     }
 
     const tp_pascal = b.dependency("tp_pascal", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_pascal, "", "pascal", "pascal", false, null);
+        gb.addGrammarChecked(tp_pascal, "", "pascal", "tree_sitter_pascal", false, null);
     }
 
     const tp_passwd = b.dependency("tp_passwd", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_passwd, "", "passwd", "passwd", false, null);
+        gb.addGrammarChecked(tp_passwd, "", "passwd", "tree_sitter_passwd", false, null);
     }
 
     const tp_phpdoc = b.dependency("tp_phpdoc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_phpdoc, "", "phpdoc", "phpdoc", true, null);
+        gb.addGrammarChecked(tp_phpdoc, "", "phpdoc", "tree_sitter_phpdoc", true, null);
     }
 
     const tp_pioasm = b.dependency("tp_pioasm", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_pioasm, "", "pioasm", "pioasm", true, null);
+        gb.addGrammarChecked(tp_pioasm, "", "pioasm", "tree_sitter_pioasm", true, null);
     }
 
     const tp_powershell = b.dependency("tp_powershell", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_powershell, "", "powershell", "powershell", true, null);
+        gb.addGrammarChecked(tp_powershell, "", "ps1", "tree_sitter_powershell", true, null);
     }
 
     const tp_prisma = b.dependency("tp_prisma", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_prisma, "", "prisma", "prisma", false, null);
+        gb.addGrammarChecked(tp_prisma, "", "prisma", "tree_sitter_prisma", false, null);
     }
 
     const tp_problog = b.dependency("tp_problog", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_problog, "grammars/problog", "problog", "problog", false, null);
+        gb.addGrammarChecked(tp_problog, "grammars/problog", "problog", "tree_sitter_problog", false, null);
     }
 
     const tp_prolog = b.dependency("tp_prolog", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_prolog, "grammars/prolog", "prolog", "prolog", false, null);
+        gb.addGrammarChecked(tp_prolog, "grammars/prolog", "prolog", "tree_sitter_prolog", false, null);
     }
 
     const tp_promql = b.dependency("tp_promql", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_promql, "", "promql", "promql", false, null);
+        gb.addGrammarChecked(tp_promql, "", "promql", "tree_sitter_promql", false, null);
     }
 
     const tp_proto = b.dependency("tp_proto", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_proto, "", "proto", "proto", false, null);
+        gb.addGrammarChecked(tp_proto, "", "proto", "tree_sitter_proto", false, null);
     }
 
     const tp_prql = b.dependency("tp_prql", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_prql, "", "prql", "prql", false, null);
+        gb.addGrammarChecked(tp_prql, "", "prql", "tree_sitter_prql", false, null);
     }
 
     const tp_pug = b.dependency("tp_pug", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_pug, "", "pug", "pug", true, null);
+        gb.addGrammarChecked(tp_pug, "", "pug", "tree_sitter_pug", true, null);
     }
 
     const tp_purescript = b.dependency("tp_purescript", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_purescript, "", "purescript", "purescript", true, null);
+        gb.addGrammarChecked(tp_purescript, "", "purescript", "tree_sitter_purescript", true, null);
     }
 
     const tp_qmljs = b.dependency("tp_qmljs", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_qmljs, "", "qmljs", "qmljs", true, null);
+        gb.addGrammarChecked(tp_qmljs, "", "qmljs", "tree_sitter_qmljs", true, null);
     }
 
     const tp_r = b.dependency("tp_r", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_r, "", "r", "r", true, null);
+        gb.addGrammarChecked(tp_r, "", "r", "tree_sitter_r", true, null);
     }
 
     const tp_racket = b.dependency("tp_racket", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_racket, "", "racket", "racket", true, null);
+        gb.addGrammarChecked(tp_racket, "", "racket", "tree_sitter_racket", true, null);
     }
 
     const tp_ralph = b.dependency("tp_ralph", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_ralph, "", "ralph", "ralph", false, null);
+        gb.addGrammarChecked(tp_ralph, "", "ralph", "tree_sitter_ralph", false, null);
     }
 
     const tp_rasi = b.dependency("tp_rasi", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rasi, "", "rasi", "rasi", false, null);
+        gb.addGrammarChecked(tp_rasi, "", "rasi", "tree_sitter_rasi", false, null);
     }
 
     const tp_razor = b.dependency("tp_razor", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_razor, "", "razor", "razor", true, null);
+        gb.addGrammarChecked(tp_razor, "", "razor", "tree_sitter_razor", true, null);
     }
 
     const tp_rbs = b.dependency("tp_rbs", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rbs, "", "rbs", "rbs", false, null);
+        gb.addGrammarChecked(tp_rbs, "", "rbs", "tree_sitter_rbs", false, null);
     }
 
     const tp_rego = b.dependency("tp_rego", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rego, "", "rego", "rego", false, null);
+        gb.addGrammarChecked(tp_rego, "", "rego", "tree_sitter_rego", false, null);
     }
 
     const tp_rescript = b.dependency("tp_rescript", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rescript, "", "rescript", "rescript", true, null);
+        gb.addGrammarChecked(tp_rescript, "", "rescript", "tree_sitter_rescript", true, null);
     }
 
     const tp_rnoweb = b.dependency("tp_rnoweb", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rnoweb, "", "rnoweb", "rnoweb", true, null);
+        gb.addGrammarChecked(tp_rnoweb, "", "rnoweb", "tree_sitter_rnoweb", true, null);
     }
 
     const tp_robot = b.dependency("tp_robot", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_robot, "", "robot", "robot", false, null);
+        gb.addGrammarChecked(tp_robot, "", "robot", "tree_sitter_robot", false, null);
     }
 
     const tp_robots = b.dependency("tp_robots", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_robots, "", "robots", "robots_txt", true, null);
+        gb.addGrammarChecked(tp_robots, "", "robots", "tree_sitter_robots_txt", true, null);
     }
 
     const tp_roc = b.dependency("tp_roc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_roc, "", "roc", "roc", true, null);
+        gb.addGrammarChecked(tp_roc, "", "roc", "tree_sitter_roc", true, null);
     }
 
     const tp_rst = b.dependency("tp_rst", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_rst, "", "rst", "rst", true, null);
+        gb.addGrammarChecked(tp_rst, "", "rst", "tree_sitter_rst", true, null);
     }
 
     const tp_scfg = b.dependency("tp_scfg", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_scfg, "", "scfg", "scfg", false, null);
+        gb.addGrammarChecked(tp_scfg, "", "scfg", "tree_sitter_scfg", false, null);
     }
 
     const tp_scheme = b.dependency("tp_scheme", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_scheme, "", "scheme", "scheme", false, null);
+        gb.addGrammarChecked(tp_scheme, "", "scm", "tree_sitter_scheme", false, null);
     }
 
     const tp_sflog = b.dependency("tp_sflog", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sflog, "sflog", "sflog", "sflog", false, null);
+        gb.addGrammarChecked(tp_sflog, "sflog", "sflog", "tree_sitter_sflog", false, null);
     }
 
     const tp_slim = b.dependency("tp_slim", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_slim, "", "slim", "slim", true, null);
+        gb.addGrammarChecked(tp_slim, "", "slim", "tree_sitter_slim", true, null);
     }
 
     const tp_slint = b.dependency("tp_slint", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_slint, "", "slint", "slint", true, null);
+        gb.addGrammarChecked(tp_slint, "", "slint", "tree_sitter_slint", true, null);
     }
 
     const tp_smithy = b.dependency("tp_smithy", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_smithy, "", "smithy", "smithy", false, null);
+        gb.addGrammarChecked(tp_smithy, "", "smithy", "tree_sitter_smithy", false, null);
     }
 
     const tp_snakemake = b.dependency("tp_snakemake", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_snakemake, "", "snakemake", "snakemake", true, null);
+        gb.addGrammarChecked(tp_snakemake, "", "snakemake", "tree_sitter_snakemake", true, null);
     }
 
     const tp_solidity = b.dependency("tp_solidity", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_solidity, "", "solidity", "solidity", false, null);
+        gb.addGrammarChecked(tp_solidity, "", "solidity", "tree_sitter_solidity", false, null);
     }
 
     const tp_soql = b.dependency("tp_soql", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_soql, "soql", "soql", "soql", false, null);
+        gb.addGrammarChecked(tp_soql, "soql", "soql", "tree_sitter_soql", false, null);
     }
 
     const tp_sosl = b.dependency("tp_sosl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sosl, "sosl", "sosl", "sosl", false, null);
+        gb.addGrammarChecked(tp_sosl, "sosl", "sosl", "tree_sitter_sosl", false, null);
     }
 
     const tp_sourcepawn = b.dependency("tp_sourcepawn", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sourcepawn, "", "sourcepawn", "sourcepawn", true, null);
+        gb.addGrammarChecked(tp_sourcepawn, "", "sourcepawn", "tree_sitter_sourcepawn", true, null);
     }
 
     const tp_sparql = b.dependency("tp_sparql", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sparql, "", "sparql", "sparql", false, null);
+        gb.addGrammarChecked(tp_sparql, "", "sparql", "tree_sitter_sparql", false, null);
     }
 
     const tp_strace = b.dependency("tp_strace", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_strace, "", "strace", "strace", false, null);
+        gb.addGrammarChecked(tp_strace, "", "strace", "tree_sitter_strace", false, null);
     }
 
     const tp_styled = b.dependency("tp_styled", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_styled, "", "styled", "styled", true, null);
+        gb.addGrammarChecked(tp_styled, "", "styled", "tree_sitter_styled", true, null);
     }
 
     const tp_supercollider = b.dependency("tp_supercollider", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_supercollider, "", "supercollider", "supercollider", true, null);
+        gb.addGrammarChecked(tp_supercollider, "", "supercollider", "tree_sitter_supercollider", true, null);
     }
 
     const tp_surface = b.dependency("tp_surface", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_surface, "", "surface", "surface", false, null);
+        gb.addGrammarChecked(tp_surface, "", "surface", "tree_sitter_surface", false, null);
     }
 
     const tp_sway = b.dependency("tp_sway", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sway, "", "sway", "sway", true, null);
+        gb.addGrammarChecked(tp_sway, "", "sway", "tree_sitter_sway", true, null);
     }
 
     const tp_sxhkdrc = b.dependency("tp_sxhkdrc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_sxhkdrc, "", "sxhkdrc", "sxhkdrc", false, null);
+        gb.addGrammarChecked(tp_sxhkdrc, "", "sxhkdrc", "tree_sitter_sxhkdrc", false, null);
     }
 
     const tp_systemtap = b.dependency("tp_systemtap", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_systemtap, "", "systemtap", "systemtap", false, null);
+        gb.addGrammarChecked(tp_systemtap, "", "systemtap", "tree_sitter_systemtap", false, null);
     }
 
     const tp_tact = b.dependency("tp_tact", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_tact, "", "tact", "tact", false, null);
+        gb.addGrammarChecked(tp_tact, "", "tact", "tree_sitter_tact", false, null);
     }
 
     const tp_templ = b.dependency("tp_templ", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_templ, "", "templ", "templ", true, null);
+        gb.addGrammarChecked(tp_templ, "", "templ", "tree_sitter_templ", true, null);
     }
 
     const tp_tera = b.dependency("tp_tera", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_tera, "", "tera", "tera", true, null);
+        gb.addGrammarChecked(tp_tera, "", "tera", "tree_sitter_tera", true, null);
     }
 
     const tp_textproto = b.dependency("tp_textproto", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_textproto, "", "textproto", "textproto", false, null);
+        gb.addGrammarChecked(tp_textproto, "", "textproto", "tree_sitter_textproto", false, null);
     }
 
     const tp_tiger = b.dependency("tp_tiger", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_tiger, "", "tiger", "tiger", true, null);
+        gb.addGrammarChecked(tp_tiger, "", "tiger", "tree_sitter_tiger", true, null);
     }
 
     const tp_tlaplus = b.dependency("tp_tlaplus", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_tlaplus, "", "tlaplus", "tlaplus", true, null);
+        gb.addGrammarChecked(tp_tlaplus, "", "tlaplus", "tree_sitter_tlaplus", true, null);
     }
 
     const tp_todotxt = b.dependency("tp_todotxt", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_todotxt, "", "todotxt", "todotxt", false, null);
+        gb.addGrammarChecked(tp_todotxt, "", "todotxt", "tree_sitter_todotxt", false, null);
     }
 
     const tp_turtle = b.dependency("tp_turtle", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_turtle, "", "turtle", "turtle", false, null);
+        gb.addGrammarChecked(tp_turtle, "", "turtle", "tree_sitter_turtle", false, null);
     }
 
     const tp_twig = b.dependency("tp_twig", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_twig, "", "twig", "twig", false, null);
+        gb.addGrammarChecked(tp_twig, "", "twig", "tree_sitter_twig", false, null);
     }
 
     const tp_typespec = b.dependency("tp_typespec", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_typespec, "", "typespec", "typespec", false, null);
+        gb.addGrammarChecked(tp_typespec, "", "typespec", "tree_sitter_typespec", false, null);
     }
 
     const tp_typoscript = b.dependency("tp_typoscript", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_typoscript, "", "typoscript", "typoscript", false, null);
+        gb.addGrammarChecked(tp_typoscript, "", "typoscript", "tree_sitter_typoscript", false, null);
     }
 
     const tp_typst = b.dependency("tp_typst", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_typst, "", "typst", "typst", true, null);
+        gb.addGrammarChecked(tp_typst, "", "typst", "tree_sitter_typst", true, null);
     }
 
     const tp_unison = b.dependency("tp_unison", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_unison, "", "unison", "unison", true, null);
+        gb.addGrammarChecked(tp_unison, "", "unison", "tree_sitter_unison", true, null);
     }
 
     const tp_usd = b.dependency("tp_usd", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_usd, "", "usd", "usd", false, null);
+        gb.addGrammarChecked(tp_usd, "", "usd", "tree_sitter_usd", false, null);
     }
 
     const tp_v = b.dependency("tp_v", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_v, "tree_sitter_v", "v", "v", false, null);
+        gb.addGrammarChecked(tp_v, "tree_sitter_v", "v", "tree_sitter_v", false, null);
     }
 
     const tp_vala = b.dependency("tp_vala", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vala, "", "vala", "vala", false, null);
+        gb.addGrammarChecked(tp_vala, "", "vala", "tree_sitter_vala", false, null);
     }
 
     const tp_vento = b.dependency("tp_vento", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vento, "", "vento", "vento", true, null);
+        gb.addGrammarChecked(tp_vento, "", "vento", "tree_sitter_vento", true, null);
     }
 
     const tp_verilog = b.dependency("tp_verilog", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_verilog, "", "v", "systemverilog", false, null);
+        gb.addGrammarChecked(tp_verilog, "", "v", "tree_sitter_systemverilog", false, null);
     }
 
     const tp_vhdl = b.dependency("tp_vhdl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vhdl, "", "vhdl", "vhdl", true, null);
+        gb.addGrammarChecked(tp_vhdl, "", "vhdl", "tree_sitter_vhdl", true, null);
     }
 
     const tp_vhs = b.dependency("tp_vhs", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vhs, "", "vhs", "vhs", false, null);
+        gb.addGrammarChecked(tp_vhs, "", "vhs", "tree_sitter_vhs", false, null);
     }
 
     const tp_vimdoc = b.dependency("tp_vimdoc", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vimdoc, "", "vimdoc", "vimdoc", false, null);
+        gb.addGrammarChecked(tp_vimdoc, "", "vimdoc", "tree_sitter_vimdoc", false, null);
     }
 
     const tp_vrl = b.dependency("tp_vrl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_vrl, "", "vrl", "vrl", false, null);
+        gb.addGrammarChecked(tp_vrl, "", "vrl", "tree_sitter_vrl", false, null);
     }
 
     const tp_wgsl = b.dependency("tp_wgsl", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_wgsl, "", "wgsl", "wgsl", true, null);
+        gb.addGrammarChecked(tp_wgsl, "", "wgsl", "tree_sitter_wgsl", true, null);
     }
 
     const tp_wing = b.dependency("tp_wing", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_wing, "", "wing", "wing", true, null);
+        gb.addGrammarChecked(tp_wing, "", "wing", "tree_sitter_wing", true, null);
     }
 
     const tp_wit = b.dependency("tp_wit", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_wit, "", "wit", "wit", true, null);
+        gb.addGrammarChecked(tp_wit, "", "wit", "tree_sitter_wit", true, null);
     }
 
     const tp_xresources = b.dependency("tp_xresources", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_xresources, "", "xresources", "xresources", false, null);
+        gb.addGrammarChecked(tp_xresources, "", "xresources", "tree_sitter_xresources", false, null);
     }
 
     const tp_yang = b.dependency("tp_yang", .{});
     if (gb.use_third_party) {
-        gb.addGrammarChecked(tp_yang, "", "yang", "yang", false, null);
+        gb.addGrammarChecked(tp_yang, "", "yang", "tree_sitter_yang", false, null);
     }
 
     mod.addImport("grammars", gb.buildGrammarsModule());
@@ -1404,6 +1377,7 @@ const GrammarBuilder = struct {
     use_all_langs: bool,
     use_langs: []const []const u8,
     use_third_party: bool,
+    empty_root: ?std.Build.LazyPath = null,
 
     fn addGrammarChecked(
         self: *GrammarBuilder,

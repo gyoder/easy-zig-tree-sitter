@@ -15,7 +15,7 @@ steps:
     image: *zig_image
     commands:
       - zig build test
-      - zig build test -- --third-party
+      - zig build test -Duse_third_party
 
 
 
