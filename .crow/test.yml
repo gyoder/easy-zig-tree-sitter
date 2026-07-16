@@ -1,0 +1,21 @@
+when:
+  - event: push
+
+clone:
+  git:
+    image: codefloe.com/crow-plugins/clone:1.1.0
+    settings:
+      tags: true
+
+variables:
+  - &zig_image 'ghcr.io/rust-cross/cargo-zigbuild:0.23'
+
+steps:
+  - name: test
+    image: *zig_image
+    commands:
+      - zig build test
+      - zig build test -- --third-party
+
+
+
