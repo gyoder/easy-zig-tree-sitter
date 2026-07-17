@@ -11,6 +11,8 @@ organizations.
 | Key | Language | Repository |
 |-----|----------|------------|
 | `agda` | Agda | [tree-sitter-agda](https://github.com/tree-sitter/tree-sitter-agda) |
+| `bb` | BitBake | [tree-sitter-bitbake](https://github.com/tree-sitter-grammars/tree-sitter-bitbake) |
+| `bicep` | Bicep | [tree-sitter-bicep](https://github.com/tree-sitter-grammars/tree-sitter-bicep) |
 | `c` | C | [tree-sitter-c](https://github.com/tree-sitter/tree-sitter-c) |
 | `cairo` | Cairo | [tree-sitter-cairo](https://github.com/tree-sitter-grammars/tree-sitter-cairo) |
 | `capnp` | Cap'n Proto | [tree-sitter-capnp](https://github.com/tree-sitter-grammars/tree-sitter-capnp) |
@@ -145,7 +147,6 @@ to the language owners.
 | `authzed` | AuthZed | [mleonidas/tree-sitter-authzed](https://github.com/mleonidas/tree-sitter-authzed) |
 | `awk` | AWK | [Beaglefoot/tree-sitter-awk](https://github.com/Beaglefoot/tree-sitter-awk) |
 | `bass` | Bass | [vito/tree-sitter-bass](https://github.com/vito/tree-sitter-bass) |
-| `bb` | BitBake | [tree-sitter-grammars/tree-sitter-bitbake](https://github.com/tree-sitter-grammars/tree-sitter-bitbake) |
 | `beancount` | Beancount | [polarmutex/tree-sitter-beancount](https://github.com/polarmutex/tree-sitter-beancount) |
 | `bibtex` | BibTeX | [latex-lsp/tree-sitter-bibtex](https://github.com/latex-lsp/tree-sitter-bibtex) |
 | `blade` | Blade | [EmranMR/tree-sitter-blade](https://github.com/EmranMR/tree-sitter-blade) |
@@ -166,7 +167,7 @@ to the language owners.
 | `dhall` | Dhall | [jbellerb/tree-sitter-dhall](https://github.com/jbellerb/tree-sitter-dhall) |
 | `disassembly` | Disassembly | [ColinKennedy/tree-sitter-disassembly](https://github.com/ColinKennedy/tree-sitter-disassembly) |
 | `djot` | Djot | [treeman/tree-sitter-djot](https://github.com/treeman/tree-sitter-djot) |
-| `Dockerfile` | Dockerfile | [camdencheek/tree-sitter-dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile) |
+| `dockerfile` | Dockerfile | [camdencheek/tree-sitter-dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile) |
 | `dot` | DOT (Graphviz) | [rydesun/tree-sitter-dot](https://github.com/rydesun/tree-sitter-dot) |
 | `earthfile` | Earthfile | [glehmann/tree-sitter-earthfile](https://github.com/glehmann/tree-sitter-earthfile) |
 | `ebnf` | EBNF | [RubixDev/ebnf](https://github.com/RubixDev/ebnf) |
@@ -179,7 +180,6 @@ to the language owners.
 | `elvish` | Elvish | [elves/tree-sitter-elvish](https://github.com/elves/tree-sitter-elvish) |
 | `enforce` | Enforce | [simonvic/tree-sitter-enforce](https://github.com/simonvic/tree-sitter-enforce) |
 | `erl` | Erlang | [WhatsApp/tree-sitter-erlang](https://github.com/WhatsApp/tree-sitter-erlang) |
-| `ex` | Elixir | [elixir-lang/tree-sitter-elixir](https://github.com/elixir-lang/tree-sitter-elixir) |
 | `facility` | Facility | [FacilityApi/tree-sitter-facility](https://github.com/FacilityApi/tree-sitter-facility) |
 | `faust` | Faust | [khiner/tree-sitter-faust](https://github.com/khiner/tree-sitter-faust) |
 | `fennel` | Fennel | [alexmozaidze/tree-sitter-fennel](https://github.com/alexmozaidze/tree-sitter-fennel) |
@@ -195,13 +195,9 @@ to the language owners.
 | `gdshader` | Godot Shader | [GodOfAvacyn/tree-sitter-gdshader](https://github.com/GodOfAvacyn/tree-sitter-gdshader) |
 | `git_config` | Git Config | [the-mikedavis/tree-sitter-git-config](https://github.com/the-mikedavis/tree-sitter-git-config) |
 | `git_rebase` | Git Rebase | [the-mikedavis/tree-sitter-git-rebase](https://github.com/the-mikedavis/tree-sitter-git-rebase) |
-| `gitattributes` | Git Attributes | [ObserverOfTime/tree-sitter-gitattributes](https://github.com/ObserverOfTime/tree-sitter-gitattributes) |
 | `gitcommit` | Git Commit | [gbprod/tree-sitter-gitcommit](https://github.com/gbprod/tree-sitter-gitcommit) |
 | `gitignore` | Git Ignore | [shunsambongi/tree-sitter-gitignore](https://github.com/shunsambongi/tree-sitter-gitignore) |
 | `gleam` | Gleam | [gleam-lang/tree-sitter-gleam](https://github.com/gleam-lang/tree-sitter-gleam) |
-| `glimmer` | Glimmer | [ember-tooling/tree-sitter-glimmer](https://github.com/ember-tooling/tree-sitter-glimmer) |
-| `glimmer_javascript` | Glimmer JS | [NullVoxPopuli/tree-sitter-glimmer-javascript](https://github.com/NullVoxPopuli/tree-sitter-glimmer-javascript) |
-| `glimmer_typescript` | Glimmer TS | [NullVoxPopuli/tree-sitter-glimmer-typescript](https://github.com/NullVoxPopuli/tree-sitter-glimmer-typescript) |
 | `gnuplot` | Gnuplot | [dpezto/tree-sitter-gnuplot](https://github.com/dpezto/tree-sitter-gnuplot) |
 | `goctl` | Goctl | [chaozwn/tree-sitter-goctl](https://github.com/chaozwn/tree-sitter-goctl) |
 | `godot_resource` | Godot Resource | [PrestonKnopp/tree-sitter-godot-resource](https://github.com/PrestonKnopp/tree-sitter-godot-resource) |
@@ -210,7 +206,7 @@ to the language owners.
 | `gql` | GraphQL | [bkegley/tree-sitter-graphql](https://github.com/bkegley/tree-sitter-graphql) |
 | `gren` | Gren | [MaeBrooks/tree-sitter-gren](https://github.com/MaeBrooks/tree-sitter-gren) |
 | `groovy` | Groovy | [murtaza64/tree-sitter-groovy](https://github.com/murtaza64/tree-sitter-groovy) |
-| `hh` | Hack | [slackhq/tree-sitter-hack](https://github.com/slackhq/tree-sitter-hack) |
+| `hack` | Hack | [slackhq/tree-sitter-hack](https://github.com/slackhq/tree-sitter-hack) |
 | `haskell_persistent` | Haskell Persistent | [MercuryTechnologies/tree-sitter-haskell-persistent](https://github.com/MercuryTechnologies/tree-sitter-haskell-persistent) |
 | `heex` | HEEx | [connorlay/tree-sitter-heex](https://github.com/connorlay/tree-sitter-heex) |
 | `hjson` | HJSON | [winston0410/tree-sitter-hjson](https://github.com/winston0410/tree-sitter-hjson) |
@@ -251,7 +247,6 @@ to the language owners.
 | `nim_format_string` | Nim Format String | [aMOPel/tree-sitter-nim-format-string](https://github.com/aMOPel/tree-sitter-nim-format-string) |
 | `ninja` | Ninja | [alemuller/tree-sitter-ninja](https://github.com/alemuller/tree-sitter-ninja) |
 | `nix` | Nix | [cstrahan/tree-sitter-nix](https://github.com/cstrahan/tree-sitter-nix) |
-| `norg` | Norg | [nvim-neorg/tree-sitter-norg](https://github.com/nvim-neorg/tree-sitter-norg) |
 | `nu` | Nushell | [nushell/tree-sitter-nu](https://github.com/nushell/tree-sitter-nu) |
 | `objdump` | Objdump | [ColinKennedy/tree-sitter-objdump](https://github.com/ColinKennedy/tree-sitter-objdump) |
 | `ocamllex` | OCamllex | [atom-ocaml/tree-sitter-ocamllex](https://github.com/atom-ocaml/tree-sitter-ocamllex) |
@@ -266,7 +261,6 @@ to the language owners.
 | `promql` | PromQL | [MichaHoffmann/tree-sitter-promql](https://github.com/MichaHoffmann/tree-sitter-promql) |
 | `proto` | Protocol Buffers | [treywood/tree-sitter-proto](https://github.com/treywood/tree-sitter-proto) |
 | `prql` | PRQL | [PRQL/tree-sitter-prql](https://github.com/PRQL/tree-sitter-prql) |
-| `ps1` | PowerShell | [airbus-cert/tree-sitter-powershell](https://github.com/airbus-cert/tree-sitter-powershell) |
 | `pug` | Pug | [zealot128/tree-sitter-pug](https://github.com/zealot128/tree-sitter-pug) |
 | `purescript` | PureScript | [postsolar/tree-sitter-purescript](https://github.com/postsolar/tree-sitter-purescript) |
 | `qmljs` | QML (JS) | [yuja/tree-sitter-qmljs](https://github.com/yuja/tree-sitter-qmljs) |
@@ -285,7 +279,6 @@ to the language owners.
 | `rst` | reStructuredText | [stsewd/tree-sitter-rst](https://github.com/stsewd/tree-sitter-rst) |
 | `scfg` | SCFG | [rockorager/tree-sitter-scfg](https://github.com/rockorager/tree-sitter-scfg) |
 | `scheme` | Scheme | [6cdh/tree-sitter-scheme](https://github.com/6cdh/tree-sitter-scheme) |
-| `scm` | Scheme | [6cdh/tree-sitter-scheme](https://github.com/6cdh/tree-sitter-scheme) |
 | `sflog` | Salesforce Flow Log | [aheber/tree-sitter-sfapex](https://github.com/aheber/tree-sitter-sfapex) |
 | `slim` | Slim | [theoo/tree-sitter-slim](https://github.com/theoo/tree-sitter-slim) |
 | `slint` | Slint | [slint-ui/tree-sitter-slint](https://github.com/slint-ui/tree-sitter-slint) |
@@ -303,6 +296,7 @@ to the language owners.
 | `sway` | Sway | [FuelLabs/tree-sitter-sway](https://github.com/FuelLabs/tree-sitter-sway) |
 | `sxhkdrc` | sxhkdrc | [RaafatTurki/tree-sitter-sxhkdrc](https://github.com/RaafatTurki/tree-sitter-sxhkdrc) |
 | `systemtap` | SystemTap | [ok-ryoko/tree-sitter-systemtap](https://github.com/ok-ryoko/tree-sitter-systemtap) |
+| `systemverilog` | SystemVerilog | [gmlarumbe/tree-sitter-systemverilog](https://github.com/gmlarumbe/tree-sitter-systemverilog) |
 | `tact` | Tact | [tact-lang/tree-sitter-tact](https://github.com/tact-lang/tree-sitter-tact) |
 | `templ` | Templ | [vrischmann/tree-sitter-templ](https://github.com/vrischmann/tree-sitter-templ) |
 | `tera` | Tera | [uncenter/tree-sitter-tera](https://github.com/uncenter/tree-sitter-tera) |
@@ -317,7 +311,7 @@ to the language owners.
 | `typst` | Typst | [uben0/tree-sitter-typst](https://github.com/uben0/tree-sitter-typst) |
 | `unison` | Unison | [kylegoetz/tree-sitter-unison](https://github.com/kylegoetz/tree-sitter-unison) |
 | `usd` | USD | [ColinKennedy/tree-sitter-usd](https://github.com/ColinKennedy/tree-sitter-usd) |
-| `v` | V | [vlang/v-analyzer](https://github.com/vlang/v-analyzer) |
+| `vlang` | V | [vlang/v-analyzer](https://github.com/vlang/v-analyzer) |
 | `vala` | Vala | [vala-lang/tree-sitter-vala](https://github.com/vala-lang/tree-sitter-vala) |
 | `vento` | Vento | [ventojs/tree-sitter-vento](https://github.com/ventojs/tree-sitter-vento) |
 | `vhdl` | VHDL | [jpt13653903/tree-sitter-vhdl](https://github.com/jpt13653903/tree-sitter-vhdl) |

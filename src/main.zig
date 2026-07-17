@@ -35,7 +35,7 @@ const test_source_lua =
 pub fn main(init: std.process.Init) !void {
     const allocator = init.arena.allocator();
 
-    const query_source = ezts.getQuery("lua").?;
+    const query_source = ezts.getQuery("lua", "highlights").?;
 
     const language = ezts.getLang("lua").?;
     defer language.destroy();

@@ -10,6 +10,6 @@ pub fn getLang(lang: []const u8) ?*ts.Language {
     return (grammars.languages.get(lang) orelse return null)();
 }
 
-pub fn getQuery(lang: []const u8) ?[]const u8 {
-    return queries.queries.get(lang);
+pub fn getQuery(lang: []const u8, query_type: []const u8) ?[]const u8 {
+    return queries.getQuery(lang, query_type);
 }

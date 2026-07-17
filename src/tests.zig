@@ -31,7 +31,7 @@ fn runQueryTest(entries: []const Entry) !void {
         try parser.setLanguage(lang);
         const tree = parser.parseString(e.source, null) orelse continue;
         defer tree.destroy();
-        const query_src = ezts.getQuery(e.key) orelse {
+        const query_src = ezts.getQuery(e.key, "highlights") orelse {
             std.debug.print("NO QUERY: {s}\n", .{e.key});
             continue;
         };
@@ -115,7 +115,7 @@ const parse_entries: []const Entry = &.{
     .{ .key = "scss", .source = "$a:1" },
     .{ .key = "cst", .source = "" },
     .{ .key = "jl", .source = "x=1" },
-    .{ .key = "hs", .source = "x=1" },
+    .{ .key = "haskell", .source = "x=1" },
     .{ .key = "cyberchef", .source = "" },
     .{ .key = "js", .source = "1" },
     .{ .key = "json", .source = "1" },
@@ -238,7 +238,7 @@ const query_entries: []const Entry = &.{
     .{ .key = "scss", .source = "$a:1" },
     .{ .key = "cst", .source = "" },
     .{ .key = "jl", .source = "x=1" },
-    .{ .key = "hs", .source = "x=1" },
+    .{ .key = "haskell", .source = "x=1" },
     .{ .key = "cyberchef", .source = "" },
     .{ .key = "js", .source = "1" },
     .{ .key = "json", .source = "1" },
